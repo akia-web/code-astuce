@@ -1,0 +1,57 @@
+.contenu{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 1.2em;
+    line-height: 0em;
+}
+.soulignement_titre{
+    position: relative;
+}
+
+.soulignement_titre::before{
+    content : "";
+    position: absolute;
+    background-color :  #ba1159;
+    width: 15px;
+    height: 4px;
+    top: 10px;
+}
+
+.text_descriptif{
+color: rgb(121, 120, 120);
+}
+
+.imgTuto{
+    width: 50%;
+}
+
+.dossierImg{
+    display: flex;
+    flex-wrap: wrap;
+  
+  
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    
+}
+
+.text_tuto{
+    margin-left: 50px;
+}
+
+.rouge{
+    color: red;
+}
+
+.separation{
+    width: 20%;
+    margin-inline-start: 0px;
+    margin-bottom: 10px;
+    border : 2px solid #ba1159
+}

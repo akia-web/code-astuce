@@ -1,0 +1,76 @@
+/*barre d'en-tete */
+
+.logo{
+    height: 3vh;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin : 0 auto;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.imageLogo{
+    height: 10vh;
+  
+}
+
+.navigation{
+    margin-left: 10px;
+}
+
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+nav ul ul {
+    display: none;
+    width: 200px;
+}
+
+li{
+    list-style: none;
+    width: 200px;
+  
+    
+}
+
+nav li a{
+    padding-left: 10px;
+    text-decoration: none;
+    color : rgb(158, 23, 68);
+    display: block;  
+   
+}
+
+nav ul.niveau1 li.sousmenu:hover ul.niveau2{
+    display: block;
+    
+}
+
+nav li:hover{
+    background-color: rgba(158, 158, 158, 0.659);
+}
+
+li a:hover{
+background-color: black;
+color: white;
+}
+
+.titreNav{
+    font-size: 20px;
+   
+}
+
+
+
+
+
