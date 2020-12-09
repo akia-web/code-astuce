@@ -44,7 +44,7 @@ li{
 }
 
 nav li a{
-    padding-left: 10px;
+    padding: 5px;
     text-decoration: none;
     color : rgb(158, 23, 68);
     display: block;  
@@ -56,20 +56,27 @@ nav ul.niveau1 li.sousmenu:hover ul.niveau2{
     
 }
 
-nav li:hover{
-    background-color: rgba(158, 158, 158, 0.659);
+nav li a:hover{
+    color:black;
+    font-size: 1.5em;
+    
 }
 
 li a:hover{
-background-color: black;
+text-decoration: underline;
 color: white;
+
+}
+
+.niveau1:hover{
+   border-top: 3px double black ;
+   border-bottom:3px double black ;
 }
 
 .titreNav{
     font-size: 20px;
    
 }
-
 
 
 

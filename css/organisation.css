@@ -1,31 +1,58 @@
 .contenu{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 h2{
     font-size: 1.2em;
-    line-height: 0em;
-}
-.soulignement_titre{
-    position: relative;
+  
+    text-align: center;
 }
 
-.soulignement_titre::before{
-    content : "";
+
+.container{
+   border: 4px double rgb(158, 23, 68);
+    width: 45%;
+    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 30px;
+    position : relative;
+}
+
+.container::before{
     position: absolute;
-    background-color :  #ba1159;
-    width: 15px;
-    height: 4px;
-    top: 10px;
+    top: 2%;
+    left: 91%;
+    border: 2px solid rgb(158, 23, 68);
+    padding: 5px 8px  5px 8px;
+    border-radius: 100%;
+    font-weight: 600;
+    color: rgb(158, 23, 68);
+}
+
+.container1::before{
+    content:"1";  
+}
+
+.container2::before{
+    content:"2";
+}
+
+.container3::before{
+    content:"3";
 }
 
 .text_descriptif{
 color: rgb(121, 120, 120);
+
+}
+
+.commentaire {
+    color: green
 }
 
 .imgTuto{
-    width: 50%;
+    width: 100%;
 }
 
 .dossierImg{
@@ -54,4 +81,10 @@ color: rgb(121, 120, 120);
     margin-inline-start: 0px;
     margin-bottom: 10px;
     border : 2px solid #ba1159
+}
+
+.boiteImage{
+  
+    width: 24%;
+    margin: auto;
 }
