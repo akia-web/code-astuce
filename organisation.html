@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/organisation.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Organisation</title>
 </head>
 <body>
+    <script src="javascript/defilement_menu.js"></script>
     <section class="head"> 
         <div class="imageLogo">
            <a href="index.html"> <img class="logo" src="images/logo1.svg" alt="logo du site"></a>
@@ -29,14 +32,24 @@
     
     </section>
    
-    
+    <div class="menu">
+        <ul>
+            <a href="#dossierProjet"><li>Création du dossier des projets</li></a>   
+            <a href="#furturProjet"><li>Création du dossier du futur projet</li></a>
+            <a href="#imagesCss"><li>Création des dossiers images et CSS</li></a>
+            <a href="#afficheExtension"><li>Afficher l'extension des fichiers</li></a>
+            <a href="#ajoutHtml"><li>Ajout du dossier HTML</li></a>
+            
+        </ul>
+        </div>
     
     <div class="contenu">
+  
         <hr>
         <h1>Comment organiser ses dossiers?</h1> <br><br>
 
         <!--Premier container-->
-        <div class="container container1">
+        <div class="container container1" id="furturProjet">
             <h2 class="soulignement_titre">Création du dossier qui regroupe tous nos projets</h2>
             <p class="text_descriptif">Dans un premier temps, il faut créer un dossier qui regrouperas tous nos dossiers de projets de code </p> <br><br>
             <div class="boiteImage">
@@ -45,7 +58,7 @@
         </div>  <!--fin du premier container-->
 
         <!--Deuxieme container-->
-        <div class="container container2">
+        <div class="container container2" id="futurProjet">
             <h2 class="soulignement_titre">Création du dossier de ton futur projet</h2>
             <p class="text_descriptif">Ouvre le dossier "projets", et à l'intérieur de celui-ci, il faut créer  un autre dossier au nom du projet que tu veux réaliser. <br>
                 <span class="commentaire">// Par exemple ici, je l'ai appelé tuto_html</span>
@@ -58,7 +71,7 @@
         </div> <!--fin deuxieme container-->
 
         <!--Troisieme container-->    
-        <div class="container container3">
+        <div class="container container3" id="imagesCss">
             <h2 class="soulignement_titre">Création des dossiers "images" et "css"</h2>
             <p class=" text_descriptif"> J'ouvre le dossier tuto_html et dans celui-ci je vais encore créer deux dossiers. Un dossier images et un autre css</p>
             <div class="dossierImg">
@@ -72,7 +85,7 @@
  
 
 
-    <div class="container container4">
+    <div class="container container4" id="afficheExtension">
         <h2 class="soulignement_titre">Afficher l'extension des fichiers</h2>
         <p class="text_descriptif">Pour la prochaine étape, nous aurons besoin de voir l'extension du fichier pour la renomer.<br>
            Pour celà il faut aller dans "Affichage" puis cocher la case "Extension de noms de fichiers"</p>
@@ -81,17 +94,31 @@
         </div>
     </div>
 
-    <div class="container container5">
+    <div class="container container5" id="ajoutHtml">
         <h2 class="soulignement_titre">Ajouter le fichier Html à la racine</h2>
-        <p class="text_descriptif">Pour la prochaine étape, nous aurons besoin de voir l'extension du fichier pour la renomer.<br>
-           Pour celà il faut aller dans "Affichage" puis cocher la case "Extension de noms de fichiers"</p>
+        <p class="text_descriptif">Maintenant il faut créer la page Html. C'est dans cette page que va se trouver la structure du site ainsi que tous les éléments de texte. <br>
+        1. Faire un clic droit sous le dossier "images". <br>
+        2. Selectionner "nouveau" -> "document texte".
+            
         <div class="dossierImg">
-           <img class="imgTuto" src="images/organisation/afficher_extension.png" alt="">
+           <img class="imgTuto" src="images/organisation/ajout_fichier_txt.png" alt="">
         </div>
+        <p class="text_descriptif">3.Faites un clic droit sur ce nouveau fichier et selectionner "renomer". <br>On le renomme en index.html <br></p>
+       <p class="commentaire"> // On le nomme ainsi parce que c'est ainsi que l'on nomme sa page d'accueil et que beaucoup d'herbergeur demande d'avoir un fichier index.html pour pouvoir faire fonctionner le site. En développement local il n'est pas necessaire de le nommer comme celà mais il est préférable de s'habituer à la convention.</p>
+        <div class="dossierImg">
+            <img class="imgTuto" src="images/organisation/renommer.png" alt="">
+         </div>
+        <p class="text_descriptif">Un message va apparaitre. Il demande si vous voulez vraiment modifier l'extension. Vous dites oui</p>
+        <div class="dossierImg">
+            <img class="imgTuto" src="images/organisation/page_html.png" alt="">
+         </div>
+         <p class="text_descriptif">Voilà! la page html est créer</p>
     </div>
 
 
 </div>
+
+
 
 </body>
 </html>
