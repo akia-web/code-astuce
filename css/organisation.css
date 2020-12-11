@@ -1,5 +1,5 @@
 .contenu{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -12,7 +12,7 @@ h2{
 
 .container{
    border: 4px double rgb(158, 23, 68);
-    width: 45%;
+    width: 60%;
     margin: 0 auto;
     padding: 15px;
     margin-bottom: 50px;
@@ -24,7 +24,7 @@ h2{
     top: 2%;
     left: 91%;
     border: 2px solid rgb(158, 23, 68);
-    padding: 5px 8px  5px 8px;
+    padding: 5px 10px  5px 10px;
     border-radius: 100%;
     font-weight: 600;
     color: rgb(158, 23, 68);
@@ -49,13 +49,17 @@ h2{
 .container5::before{
     content:"5";
 }
+
+.container6::before{
+    content:"6";
+}
 .text_descriptif{
 color: rgb(121, 120, 120);
 
 }
 
 .commentaire {
-    color: green
+    color:rgb(158, 23, 68);
 }
 
 .imgTuto{
@@ -117,6 +121,7 @@ color: rgb(121, 120, 120);
 
 }
 
-.menu li a{
-    
+a{
+    color:#ba1159;
+    text-decoration: none;
 }
