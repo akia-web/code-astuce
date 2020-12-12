@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/organisation.css">
     <link rel="stylesheet" href="css/base_html.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Base HTML</title>
 </head>
 <body>
@@ -31,60 +32,123 @@
    
     </section>
 
-    <div class="contenu">
-    <hr>
-    <h1>Et après avoir <a href="organisation.html">organisé son espace de travail </a>on fait quoi?</h1>
-
-    <div class="container container1" id="ouvrirProjet">
-        <h2 class="soulignement_titre">Ouvrir son dossier de projet sous Visual Studio Code</h2>
-        <p class="text_descriptif">Il y a deux façons d'ouvrir son projet dans Visual Studio Code <br> <br>
-        1. Via l'interface de visual studio code <br>
-        -cliquer sur "open folder" ou cliquer sur "file"-> "open folder" </p> 
-       
-        <div class="dossierImg">
-            <img class="imgTuto"src="images/base_html/ouvrirVS.png" alt="dossier projet"> 
-        </div><!--fin de la div image-->
-        <p class="text_descriptif"> - une fenetre va apparaitre pour que l'on puisse choisir le dossier à ouvrir.</p>
-        <div class="dossierImg">
-            <img class="imgTuto"src="images/base_html/ouvrirVS2.png" alt="dossier projet"> 
-        </div><!--fin de la div image-->
-
-        <p class="text_descriptif"> 2. Ou simplement faire un glissé / déposé du dossier</p>
-
-    </div>  <!--fin du premier container-->
-
-    <div class="container container2" id="décompositionProjet">
-        <h2 class="soulignement_titre">Décomposition de l'affichage Visual studio code</h2>
-        <p class="text_descriptif">Une fois le dossier ouvert l'affichage se décompose en deux grand cadre <br>
-        <span class="commentaire">// ps : j'ai fermer le "welcome" qui se trouvait dans le cadre 2</span></p> 
-       
-        <div class="dossierImg">
-            <img class="imgTuto"src="images/base_html/decomposition.png" alt="dossier projet"> 
-        </div><!--fin de la div image-->
-        <p class="text_descriptif rouge"> Le cadre 1 (rouge) : </p>
+    <div class="menu">
+        <ul>
+            <a href="#ouvrirProjet"><li>ouvrir le projet VsCode</li></a>   
+            <a href="#decompositionProjet"><li>Décomposition de VsCode</li></a>
+            <a href="#structureHtml"><li>Structure Html</li></a>
+          
             
-        <p class="text_descriptif">c'est ici que se trouve tous les sous dossiers et fichiers du projet, nous voyons son arborescence </p>
-            <ul>
+        </ul>
+        </div>
 
-                <li class="cadres text_descriptif"> - En premier nous retrouvons le dossier du projet, avec une fleche qui pointe vers le bas, pour indiquer que je veux voir ce qu'il y a à l'intérieur de ce dossier</li><br>
-                <li class="cadres text_descriptif"> - En dessous de cette ligne, nous nous retrouvons sur la racine du projet qui contient trois éléments.
-                    <ul>
-                        <li class="cadres text_descriptif">- Le dossier "css"</li>
-                        <li class="cadres text_descriptif">- Le dossier "images"</li>
-                        <li class="cadres text_descriptif">- Le fichier "index.html"</li>
-                    </ul>
-                </li>
-                <li class="cadres text_descriptif">Ces trois éléments se trouvent au même niveau.
-                 <br><br>
-                <li class="cadres text_descriptif"> - Puis à l'intérieur du dossier "css" le fichier "style.css", <br>
-                    qui lui n'est pas au même niveau que le dossier css, le dossier image et le fichier index.html. <br><br>
-                   
-            </ul>
-        <p class="commentaire"> // On peut voir les différents niveaux grâce aux incrémentations.</p>
-        <p class="text_descriptif vert"> Le cadre 2 (vert) : </p> 
-        <p class="text_descriptif"> c'est ici que l'on va écrire du code.</p>
+    <div class="contenu">
+        <hr>
+        <h1>Et après avoir <a href="organisation.html">organisé son espace de travail </a>on fait quoi?</h1>
 
-    </div>  <!--fin du premier container-->
+        <div class="container container1" id="ouvrirProjet">
+            <h2 class="soulignement_titre">Ouvrir son dossier de projet sous Visual Studio Code</h2>
+            <p class="text_descriptif">Il y a deux façons d'ouvrir son projet dans Visual Studio Code <br> <br>
+            1. Via l'interface de visual studio code <br>
+            -cliquer sur "open folder" ou cliquer sur "file"-> "open folder" </p> 
+        
+            <div class="dossierImg">
+                <img class="imgTuto"src="images/base_html/ouvrirVS.png" alt="dossier projet"> 
+            </div><!--fin de la div image-->
+            <p class="text_descriptif"> - une fenetre va apparaitre pour que l'on puisse choisir le dossier à ouvrir.</p>
+            <div class="dossierImg">
+                <img class="imgTuto"src="images/base_html/ouvrirVS2.png" alt="dossier projet"> 
+            </div><!--fin de la div image-->
+
+            <p class="text_descriptif"> 2. Ou simplement faire un glissé / déposé du dossier</p>
+
+        </div>  <!--fin du premier container-->
+
+        <div class="container container2" id="decompositionProjet">
+            <h2 class="soulignement_titre">Décomposition de l'affichage Visual studio code</h2>
+            <p class="text_descriptif">Une fois le dossier ouvert l'affichage se décompose en deux grand cadre <br>
+            <span class="commentaire">// ps : j'ai fermer le "welcome" qui se trouvait dans le cadre 2</span></p> 
+        
+            <div class="dossierImg">
+                <img class="imgTuto"src="images/base_html/decomposition.png" alt="dossier projet"> 
+            </div><!--fin de la div image-->
+            <p class="text_descriptif rouge"> Le cadre 1 (rouge) : </p>
+                
+            <p class="text_descriptif">c'est ici que se trouve tous les sous dossiers et fichiers du projet, nous voyons son arborescence </p>
+                <ul>
+
+                    <li class="cadres text_descriptif"> - En premier nous retrouvons le dossier du projet, avec une fleche qui pointe vers le bas, pour indiquer que je veux voir ce qu'il y a à l'intérieur de ce dossier</li><br>
+                    <li class="cadres text_descriptif"> - En dessous de cette ligne, nous nous retrouvons sur la racine du projet qui contient trois éléments.
+                        <ul>
+                            <li class="cadres text_descriptif">- Le dossier "css"</li>
+                            <li class="cadres text_descriptif">- Le dossier "images"</li>
+                            <li class="cadres text_descriptif">- Le fichier "index.html"</li>
+                        </ul>
+                    </li>
+                    <li class="cadres text_descriptif">Ces trois éléments se trouvent au même niveau.
+                    <br><br>
+                    <li class="cadres text_descriptif"> - Puis à l'intérieur du dossier "css" le fichier "style.css", <br>
+                        qui lui n'est pas au même niveau que le dossier css, le dossier image et le fichier index.html. <br><br>
+                    
+                </ul>
+            <p class="commentaire"> // On peut voir les différents niveaux grâce aux incrémentations.</p>
+            <p class="text_descriptif vert"> Le cadre 2 (vert) : </p> 
+            <p class="text_descriptif"> c'est ici que l'on va écrire du code.</p>
+
+        </div>  <!--fin du deuxieme container-->
+
+        <div class="container container3" id="structureHtml">
+            <h2 class="soulignement_titre">Structure Html</h2>
+            <p class="text_descriptif">Dans un premier temps on va cliquer une fois sur le fichier index.html <br>
+                Allez dans le cadre 2 et marquez : ! (le signe point d'exclamation). <br>
+                un cadre en dessous de la ligne 1 va apparaitre avec une clé à molette et le signe "point d'exclamation". <br>
+                Faites la touche "ENTREE" . <br>
+                Cette entrée sur la clé à molette va afficher une structure de base d'un fichier Html.
+            </p> 
+        
+            <div class="dossierImg">
+                <img class="imgTuto"src="images/base_html/structure_html.png" alt="dossier projet"> 
+            </div><!--fin de la div image-->
+            <p class="commentaire"> // Si la clé à molette n'apparait pas, ou si vous faites la touche ESPACE au lieu de la touche ENTREE, cela n'affichera pas la base HTML </p>
+            <div class="dossierImg">
+                <img class="imgTuto"src="images/base_html/structure_html2.png" alt="dossier projet"> 
+            </div><!--fin de la div image-->   
+            <p class="commentaire">//Ps j'ai fermer l'arborescence du dossier en cliquant sur l'icone qui représente deux fichiers situé en haut à gauche de l'écran dans la barre de menu verticale</p>
+            <div class="dossierImg">
+                <img class="imgcache"src="images/base_html/cacher-dossier.png" alt="dossier projet"> 
+            </div><!--fin de la div image-->  <br>
+            <h3>
+                Décomposition du code
+            </h3> <br><br>
+            <div class="dossierImg">
+                <img class="imgHtml"src="images/base_html/decomposition2.png" alt="dossier projet"> 
+            </div><!--fin de la div image--> 
+            <br><br>
+            <p class="text_descriptif">
+              
+                    <li class="cadres"> 1. La balise !DOCTYPE html déclare le type de document </li> <br>
+                    <li class="cadres"> 2. La balise <span class="vert">html </span>représente l'ensemble de la page </li> <br>
+                    <li class="cadres" > 3. La balise <span class="rouge">head </span>contient tous les éléments pour faire fonctionner correctement la page. On peut lui attribuer des métadonnées, des liens, des scripts etc... <br>
+                       <span class="commentaire">// Ces éléments ne seront pas visible sur le site</span>
+                        <ul>
+                            <li class="cadres">a. La balise meta charset="UTF-8" sert à encoder la page, pour que les accents ne soient pas retranscrit en symboles illisibles</li>
+                            <li class="cadres">b. La balise meta name="viewport" sert pour que le site soit accessible sur téléphone</li>
+                            <li class="cadres">c. La balise <span class="violet">title</span> est le titre qu'affichera l'onglet du navigateur</li>
+                            <div class="dossierImg">
+                                <img class="imgtitle"src="images/base_html/document.png" alt="dossier projet"> 
+                            </div><!--fin de la div image--> 
+                        
+                        </ul>
+                    </li> <br>
+                    <li class="cadres">4. La balise <span class="bleu">body </span>est la partie visible du site. Elle se décomposeras ensuite par une multitudes d'autres balises comme header main footer etc...</li>   
+                
+            </p>
+
+
+    </div>  <!--fin du deuxieme container-->
+
+
+
 
 
 

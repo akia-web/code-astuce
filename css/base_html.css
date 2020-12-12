@@ -1,6 +1,33 @@
 li.cadres{
     width: 100%;
+ 
+ 
+
 }
 .vert{
-    color: rgb(181, 235, 112)
+    color: #4EAE33;
+}
+
+.imgcache{
+    width: 5%;
+}
+
+
+.violet{
+    color: #BF5C9F
+}
+
+.imgHtml{
+    width: 80%;
+}
+
+.imgtitle{
+    width: 50%;
+}
+.bleu{
+    color: #50A2DA
+}
+
+h3{
+    text-decoration: underline;
 }
