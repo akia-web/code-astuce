@@ -1,0 +1,56 @@
+.rose{
+    color : rgb(206, 29, 59);
+    font-weight: 600;
+}
+
+.vert{
+    background-color:#78BE81;
+    color: black;
+    padding: 0.1% 1% 0.1% 1%;
+}
+
+.zone{
+    text-align: start;
+}
+
+.niveau2{
+    margin-left: 2%;
+}
+
+
+.niveau3{
+    margin-left: 4%;
+}
+
+.niveau4{
+    margin-left: 6%;
+}
+
+.orange{
+    background-color: #F39232;
+    color: black;
+    padding: 0.1% 1% 0.1% 1%;
+}
+.gris{
+    background-color: #DADADA;
+    color: black;
+    padding: 0.1% 1% 0.1% 1%;
+}
+
+.cadres{
+    padding: 1% 2% 1% 2%;
+}
+.cadreVert{
+    background-color: rgba(224, 245, 224, 0.529);
+  
+}
+
+.cadreOrange{
+    background-color: rgba(252, 230, 198, 0.529);
+  
+}
+
+.cadreGris{
+  background-color:#e1dbdb54;
+}
+
