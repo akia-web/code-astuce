@@ -63,3 +63,21 @@
     color : #ba1159;
     font-size: 1.1em;
 }
+.container1{
+    border: 4px double rgb(158, 23, 68);
+     width: 60%;
+     margin: 0 auto;
+     padding: 15px;
+     margin-bottom: 50px;
+     position : relative;
+ }
+.container1::before{
+    position: absolute;
+    top: 0.5%;
+    left: 91%;
+    border: 2px solid rgb(158, 23, 68);
+    padding: 5px 10px  5px 10px;
+    border-radius: 100%;
+    font-weight: 600;
+    color: rgb(158, 23, 68);
+}

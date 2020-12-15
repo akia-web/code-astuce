@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/balises.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/organisation.css">
+    <link rel="stylesheet" href="css/balises.css">
     <title>les balises</title>
 </head>
 <body>
@@ -25,154 +26,150 @@
                         <li><a class="sousTitreNav" href="balises.html">Les balises</a></li>
                     </ul>
                 </li>
-              
-          
             </ul>
-    
         </nav>
-
-        </section>
+     </section>
 
         
-        <div class="menu">
-            <ul>
-                <a href="#zonning"><li>Zonning</li></a>   
-              
-                
-            </ul>
+    <div class="menu">
+        <ul>
+            <a href="#zonning"><li>Zonning</li></a>     
+        </ul>
+    </div>
+
+    <div class="contenu">
+        <hr>
+        <h1>Et après avoir <a href="base_html.html">compris les bases HTML </a>on fait quoi?</h1>
+
+        <div class="container1 container1" id="zonning">
+            <h2 class="soulignement_titre">Le zonning</h2>
+            <p class="text_descriptif">Lorsque l'on compose un site, il faut l'imaginer sous la forme d'une grandre boite qui contient à l'intérieur d'elle une multitudes de boites <br> <br>
+            Voici comme exemple un site basique avec des couleurs pas très jolies, mais c'est pas grave, c'est pour comprendre comment est fabriqué un site. <br> <br>
+            Décomposer le site en boites s'appelle faire du zonning </p> <br>
+        
+            <h2 class="zone">sans zonning</h2>
+            <div class="dossierImg">
+                <img class="zonning"src="images/balises/sans-zonning.svg" alt="dossier projet"> 
+            </div><!--fin de la div image-->
+            <br> <br>
+
+            <h2 class="zone">Avec zonning</h2>
+            <div class="dossierImg">
+                <img class="zonning"src="images/balises/zonning.svg" alt="dossier projet"> 
+            </div><!--fin de la div image-->
+        
+            <br> <br><br>
+            <h2 class="zone rouge">toute la suite de cet article s'écrit dans la balise <span><</span>body<span>></span></h2>
+            <p > Maintenant décortiquons </p>
+            <div class="cadreVert cadres">
+            <h2 class="zone">Le cadre vert</h2>
+            <p class="text_descriptif">  Le cadre <span class="vert">vert</span> est la balise <span><</span>header<span>></span> et dedans se trouvent :  <br>
+                    - Une balise <span><</span>img<span>></span> <br>
+                    - Une balise titre de niveau 1 qui se traduit par : <span><</span>h1<span>></span><br>
+                    - Une balise <span><</span>nav<span>></span> qui contient une balise <span><</span>ul<span>></span> qui elle même contient trois balises <span><</span>li<span>></span> qui elle même sont entourées d'une balise de lien <span><</span>a<span>></span> <br>
+                    <p class="commentaire">// Un menu de navigation se traduit par la balise <span><</span>nav<span>></span>. La balise <span><</span>ul<span>></span> sert à déclarer une liste. Les balises <span><</span>li<span>></span> sont toutes les puces de la listes </p>
+            </p> <br>
+            <p> Comment ça s'écrit? </p>
+                <p class="text_descriptif"><span><</span>header<span>></span> <br>
+                <span class="niveau2"><span><</span>img src="images/logo.png" alt="logo"<span>></span> <br>
+                <span class="niveau2"><span><</span>h1<span>></span> Bienvenue sur mon site <span><</span>/h1<span>></span> <br>
+                <span class="niveau2"><span><</span>nav<span>></span> <br>
+                <span class="niveau3"><span><</span>ul<span>></span> <br>
+                <span class="niveau4"><span><</span>a href="accueil.html"<span>> </span><span><</span>li<span>></span> accueil <span><</span>/li<span>></span> <span><</span>/a<span>></span><br>
+                <span class="niveau4"><span><</span>a href="articles.html"<span>> </span><span><</span>li<span>></span> articles <span><</span>/li<span>></span> <span><</span>/a<span>></span><br>
+                <span class="niveau4"><span><</span>a href="contact.html"<span>> </span><span><</span>li<span>></span> contact <span><</span>/li<span>></span> <span><</span>/a<span>></span><br>
+                <span class="niveau3"><span><</span>/ul<span>></span> <br>
+                <span class="niveau2"><span><</span>/nav<span>></span> <br>
+                <span><</span>/header<span>></span> <br>
+            </p>
+            <p class="commentaire">// On utilise l'intendation pour mieux se repérer dans son code. <br>
+                    - Ma balise header contient une image, un titre et un menu de navigation <br>
+                - Ma balise de navigation contient une liste <br>
+                - Ma liste comprends les liens de puces accueil, articles, contact</p> 
             </div>
-    
-        <div class="contenu">
-            <hr>
-            <h1>Et après avoir <a href="base_html.html">compris les bases HTML </a>on fait quoi?</h1>
-    
-            <div class="container container1" id="zonning">
-                <h2 class="soulignement_titre">Le zonning</h2>
-                <p class="text_descriptif">Lorsque l'on compose un site, il faut l'imaginer sous la forme d'une grandre boite qui comporte à l'interrieur d'elle une multitudes de boites <br> <br>
-               Voici comme exemple un site basique avec des couleurs pas très jolies, mais c'est pas grave, c'est pour comprendre comment est fabriqué un site. <br> <br>
-               Décomposer le site en boites s'appelle faire du zonning </p> <br>
-            
-                <h2 class="zone">sans zonning</h2>
-                <div class="dossierImg">
-                    <img class="zonning"src="images/balises/sans-zonning.svg" alt="dossier projet"> 
-                </div><!--fin de la div image-->
-                <br> <br>
 
-                <h2 class="zone">Avec zonning</h2>
-                <div class="dossierImg">
-                    <img class="zonning"src="images/balises/zonning.svg" alt="dossier projet"> 
-                </div><!--fin de la div image-->
-            
-                <br> <br><br>
-                <h2 class="zone rouge">toute la suite de cet article s'écrit dans la balise <span><</span>body<span>></span></h2>
-                <p > Maintenant décortiquons </p>
-                <div class="cadreVert cadres">
-                <h2 class="zone">Le cadre vert</h2>
-                <p class="text_descriptif">  Le cadre <span class="vert">vert</span> est la balise <span><</span>header<span>></span> et dedans se trouvent :  <br>
-                       - Une balise <span><</span>img<span>></span> <br>
-                       - Une balise titre de niveau 1 qui se traduit par : <span><</span>h1<span>></span><br>
-                       - Une balise <span><</span>nav<span>></span> qui contient une balise <span><</span>ul<span>></span> qui elle même contient trois balises <span><</span>li<span>></span> qui elle même sont entourées d'une balise de lien <span><</span>a<span>></span> <br>
-                        <p class="commentaire">// Un menu de navigation se traduit par la balise <span><</span>nav<span>></span>. La balise <span><</span>ul<span>></span> sert à déclarer une liste. Les balises <span><</span>li<span>></span> sont toutes les puces de la listes </p>
-                </p> <br>
-                <p> Comment ça s'écrit? </p>
-                    <p class="text_descriptif"><span><</span>header<span>></span> <br>
-                    <span class="niveau2"><span><</span>img src="images/logo.png" alt="logo"<span>></span> <br>
-                    <span class="niveau2"><span><</span>h1<span>></span> Bienvenue sur mon site <span><</span>/h1<span>></span> <br>
-                    <span class="niveau2"><span><</span>nav<span>></span> <br>
-                    <span class="niveau3"><span><</span>ul<span>></span> <br>
-                    <span class="niveau4"><span><</span>a href="accueil.html"<span>> </span><span><</span>li<span>></span> accueil <span><</span>/li<span>></span> <span><</span>/a<span>></span><br>
-                    <span class="niveau4"><span><</span>a href="articles.html"<span>> </span><span><</span>li<span>></span> articles <span><</span>/li<span>></span> <span><</span>/a<span>></span><br>
-                    <span class="niveau4"><span><</span>a href="contact.html"<span>> </span><span><</span>li<span>></span> contact <span><</span>/li<span>></span> <span><</span>/a<span>></span><br>
-                    <span class="niveau3"><span><</span>/ul<span>></span> <br>
-                    <span class="niveau2"><span><</span>/nav<span>></span> <br>
-                    <span><</span>/header<span>></span> <br>
+            <br><br><br>
+
+            <div class="cadreOrange cadres">
+                <h2 class="zone">Le cadre orange</h2>
+                <p class="text_descriptif">  le cadre <span class="orange">orange</span> est la balise <span><</span>main<span>></span> et dedans se trouvent : <br>
+                        - Une balise <span><</span>section<span>></span> <br>
+                        - Deux balises <span><</span>div<span>></span> <br>
+                        - Deux balises <span><</span>img<span>></span> <br>
+                        - Deux balises titre de niveau 2 qui se traduit par : <span><</span>h2<span>></span><br>
+                        - Deux balises de textes <span><</span>p<span>></span> <br>
                 </p>
-                <p class="commentaire">// On utilise l'intendation pour mieux se repérer dans son code. <br>
-                     - Ma balise header contient une image, un titre et un menu de navigation <br>
-                    - Ma balise de navigation contient une liste <br>
-                    - Ma liste comprends les liens de puces accueil, articles, contact</p> 
-                </div>
-
-                <br><br><br>
-
-                <div class="cadreOrange cadres">
-                    <h2 class="zone">Le cadre orange</h2>
-                    <p class="text_descriptif">  le cadre <span class="orange">orange</span> est la balise <span><</span>main<span>></span> et dedans se trouvent : <br>
-                            - Une balise <span><</span>section<span>></span> <br>
-                            - Deux balises <span><</span>div<span>></span> <br>
-                            - Deux balises <span><</span>img<span>></span> <br>
-                            - Deux balises titre de niveau 2 qui se traduit par : <span><</span>h2<span>></span><br>
-                            - Deux balises de textes <span><</span>p<span>></span> <br>
-                    </p>
-                           
-                      
-                  
-                    <p class="commentaire">// La différence entre une <span><</span>section<span>></span> et une <span><</span>div<span>></span>. <br>
-                         La section à une valeur sémantique qui regroupe un même sujet alors que la div est neutre et sert à structurer les pages. <br>
-                        Là notre <span><</span>section<span>></span> regroupe deux <span><</span>div<span>></span> qui, on peut l'imaginer, ont le même sujet. Par exemple des photos souvenirs d'un voyage.
-                    </p> <br>
-
-                    <p> Comment ça s'écrit? </p>
-                    <p class="text_descriptif"><span><</span>main<span>></span> <br>
-                        <span class="niveau2"><span><</span>section<span>></span> <br>
-                        <span class="niveau3"><span><</span>div<span>></span> <br>
-                        <span class="niveau4"><span><</span>img src="images/photo1.png" alt="mer"<span>></span> <br>
-                        <span class="niveau4"><span><</span>h2<span>></span> Mon titre <span><</span>/h2<span>></span><br>
-                        <span class="niveau4"><span><</span>p<span>></span> Mon paragraphe <span><</span>/p<span>></span><br>
-                        <span class="niveau3"><span><</span>/div<span>></span> <br> <br>
-                        <span class="niveau3"><span><</span>div<span>></span> <br>
-                        <span class="niveau4"><span><</span>img src="images/photo2.png" alt="montage"<span>></span> <br>
-                        <span class="niveau4"><span><</span>h2<span>></span> Mon deuxième titre titre <span><</span>/h2<span>></span><br>
-                        <span class="niveau4"><span><</span>p<span>></span> Mon deuxième paragraphe <span><</span>/p<span>></span><br>
-                        <span class="niveau3"><span><</span>/div<span>></span> <br> 
-                        <span class="niveau2"><span><</span>/section<span>></span> <br>
-                        <span><</span>/main<span>></span> <br> <br>
-                    </p>
-                    <p class="commentaire">// Ma balise main contient une section qui elle même comprends deux div <br>
-                        Ces deux div comprennent chacune une image, un titre et un paragraphe. <br><br>
-                        // Pour la balise img, il faut noter le nom du chemin de l'image par rapport au dossier où elle est rangée dans le projet. <br> Le "alt" sert de note au cas où l'image ne s'affiche pas. Cela facilite aussi la compréhension pour les personnes mal-voyantes. Elles pourront comprendre de quoi traite l'image. <br> <br>
-                        Exemple : <br>
-                        code : <br>
-                        <img src="images/balises/codeChien.png" alt=""> <br>
-                        rendu : <br>
-                        <img src="images/balises/altChien.png" alt=""> <br><br>
-                        // Pour rappel, les photos que vous utilisez pour le site, (si le dossier de projet est bien organisé comme je l'ai expliqué dans l'onglet <a class="lienZonning" href="organisation.html">"Organisation"</a> ), se trouvent dans le dossier images que vous avez créer à la racine du dossier de projet. <br> <br>
-                        c'est pourquoi dans la source de l'img, je commence par "images/" + le nom de la photo.
-                      
-                    </p> 
-
-                </div>
-
-                <br><br><br>
-
-                <div class="cadreGris cadres">
-                    <h2 class="zone">Le cadre gris</h2>
-                    <p class="text_descriptif">  le cadre <span class="gris">gris</span> est la balise <span><</span>footer<span>></span> et dedans se trouvent : <br>
-                            - Une balise <span><</span>p<span>></span> <br>
-                    </p>
-                           
-                      
-                  
-                    <p class="commentaire">// On peut rajouter ce que l'on veut dans le footer.
-                    </p> <br>
-
-                    <p> Comment ça s'écrit? </p>
-                    <p class="text_descriptif"><span><</span>footer<span>></span> <br>
-                        <span class="niveau2"><span><</span>p<span>></span> © Charline Royer 2020 <span><</span>/p<span>></span><br>
                         
-                        <span><</span>/footer<span>></span> <br>
-                    </p>
-                  
+                    
+                
+                <p class="commentaire">// La différence entre une <span><</span>section<span>></span> et une <span><</span>div<span>></span>. <br>
+                        La section à une valeur sémantique qui regroupe un même sujet alors que la div est neutre et sert à structurer les pages. <br>
+                    Là notre <span><</span>section<span>></span> regroupe deux <span><</span>div<span>></span> qui, on peut l'imaginer, ont le même sujet. Par exemple des photos souvenirs d'un voyage.
+                </p> <br>
 
-                </div>
-    
-                <p class="text_descriptif">
-                    Sans le CSS le site doit donner ceci :
+                <p> Comment ça s'écrit? </p>
+                <p class="text_descriptif"><span><</span>main<span>></span> <br>
+                    <span class="niveau2"><span><</span>section<span>></span> <br>
+                    <span class="niveau3"><span><</span>div<span>></span> <br>
+                    <span class="niveau4"><span><</span>img src="images/photo1.png" alt="mer"<span>></span> <br>
+                    <span class="niveau4"><span><</span>h2<span>></span> Mon titre <span><</span>/h2<span>></span><br>
+                    <span class="niveau4"><span><</span>p<span>></span> Mon paragraphe <span><</span>/p<span>></span><br>
+                    <span class="niveau3"><span><</span>/div<span>></span> <br> <br>
+                    <span class="niveau3"><span><</span>div<span>></span> <br>
+                    <span class="niveau4"><span><</span>img src="images/photo2.png" alt="montage"<span>></span> <br>
+                    <span class="niveau4"><span><</span>h2<span>></span> Mon deuxième titre titre <span><</span>/h2<span>></span><br>
+                    <span class="niveau4"><span><</span>p<span>></span> Mon deuxième paragraphe <span><</span>/p<span>></span><br>
+                    <span class="niveau3"><span><</span>/div<span>></span> <br> 
+                    <span class="niveau2"><span><</span>/section<span>></span> <br>
+                    <span><</span>/main<span>></span> <br> <br>
                 </p>
+                <p class="commentaire">// Ma balise main contient une section qui elle même comprends deux div <br>
+                    Ces deux div comprennent chacune une image, un titre et un paragraphe. <br><br>
+                    // Pour la balise img, il faut noter le nom du chemin de l'image par rapport au dossier où elle est rangée dans le projet. <br> Le "alt" sert de note au cas où l'image ne s'affiche pas. Cela facilite aussi la compréhension pour les personnes mal-voyantes. Elles pourront comprendre de quoi traite l'image. <br> <br>
+                    Exemple : <br>
+                    code : <br>
+                    <img src="images/balises/codeChien.png" alt=""> <br>
+                    rendu : <br>
+                    <img src="images/balises/altChien.png" alt=""> <br><br>
+                    // Pour rappel, les photos que vous utilisez pour le site, (si le dossier de projet est bien organisé comme je l'ai expliqué dans l'onglet <a class="lienZonning" href="organisation.html">"Organisation"</a> ), se trouvent dans le dossier images que vous avez créer à la racine du dossier de projet. <br> <br>
+                    c'est pourquoi dans la source de l'img, je commence par "images/" + le nom de la photo.
+                    
+                </p> 
 
-                <div class="dossierImg">
-                    <img class="imgTuto"src="images/balises/renduHtml.png" alt="dossier tuto">
-                </div>
-            </div>  <!--fin du premier container-->
+            </div>
+
+            <br><br><br>
+
+            <div class="cadreGris cadres">
+                <h2 class="zone">Le cadre gris</h2>
+                <p class="text_descriptif">  le cadre <span class="gris">gris</span> est la balise <span><</span>footer<span>></span> et dedans se trouvent : <br>
+                        - Une balise <span><</span>p<span>></span> <br>
+                </p>
+                        
+                    
+                
+                <p class="commentaire">// On peut rajouter ce que l'on veut dans le footer.
+                </p> <br>
+
+                <p> Comment ça s'écrit? </p>
+                <p class="text_descriptif"><span><</span>footer<span>></span> <br>
+                    <span class="niveau2"><span><</span>p<span>></span> © Charline Royer 2020 <span><</span>/p<span>></span><br>
+                    
+                    <span><</span>/footer<span>></span> <br>
+                </p>
+                
+
+            </div>
+
+            <p class="text_descriptif">
+                Sans le CSS le site doit donner ceci :
+            </p>
+
+            <div class="dossierImg">
+                <img class="imgTuto"src="images/balises/renduHtml.png" alt="dossier tuto">
+            </div>
+        </div>  <!--fin du premier container-->
+
+        
 </body>
 </html>
