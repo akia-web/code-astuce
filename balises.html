@@ -62,8 +62,10 @@
                 <div class="dossierImg">
                     <img class="zonning"src="images/balises/zonning.svg" alt="dossier projet"> 
                 </div><!--fin de la div image-->
+            
+                <br> <br><br>
+                <h2 class="zone rouge">toute la suite de cet article s'écrit dans la balise <span><</span>body<span>></span></h2>
                 <p > Maintenant décortiquons </p>
-
                 <div class="cadreVert cadres">
                 <h2 class="zone">Le cadre vert</h2>
                 <p class="text_descriptif">  Le cadre <span class="vert">vert</span> est la balise <span><</span>header<span>></span> et dedans se trouvent :  <br>
@@ -74,7 +76,7 @@
                 </p> <br>
                 <p> Comment ça s'écrit? </p>
                     <p class="text_descriptif"><span><</span>header<span>></span> <br>
-                    <span class="niveau2"><span><</span>img<span>></span> <br>
+                    <span class="niveau2"><span><</span>img src="images/logo.png" alt="logo"<span>></span> <br>
                     <span class="niveau2"><span><</span>h1<span>></span> Bienvenue sur mon site <span><</span>/h1<span>></span> <br>
                     <span class="niveau2"><span><</span>nav<span>></span> <br>
                     <span class="niveau3"><span><</span>ul<span>></span> <br>
@@ -107,27 +109,35 @@
                   
                     <p class="commentaire">// La différence entre une <span><</span>section<span>></span> et une <span><</span>div<span>></span>. <br>
                          La section à une valeur sémantique qui regroupe un même sujet alors que la div est neutre et sert à structurer les pages. <br>
-                        Là notre <span><</span>section<span>></span> regroupe deux <span><</span>div<span>></span> qui, on peut l'imaginer, ont le même sujet. Par exemple des photos souvenirs d'un voyage
+                        Là notre <span><</span>section<span>></span> regroupe deux <span><</span>div<span>></span> qui, on peut l'imaginer, ont le même sujet. Par exemple des photos souvenirs d'un voyage.
                     </p> <br>
 
                     <p> Comment ça s'écrit? </p>
                     <p class="text_descriptif"><span><</span>main<span>></span> <br>
                         <span class="niveau2"><span><</span>section<span>></span> <br>
                         <span class="niveau3"><span><</span>div<span>></span> <br>
-                        <span class="niveau4"><span><</span>img<span>></span> <br>
+                        <span class="niveau4"><span><</span>img src="images/photo1.png" alt="mer"<span>></span> <br>
                         <span class="niveau4"><span><</span>h2<span>></span> Mon titre <span><</span>/h2<span>></span><br>
                         <span class="niveau4"><span><</span>p<span>></span> Mon paragraphe <span><</span>/p<span>></span><br>
                         <span class="niveau3"><span><</span>/div<span>></span> <br> <br>
                         <span class="niveau3"><span><</span>div<span>></span> <br>
-                        <span class="niveau4"><span><</span>img<span>></span> <br>
+                        <span class="niveau4"><span><</span>img src="images/photo2.png" alt="montage"<span>></span> <br>
                         <span class="niveau4"><span><</span>h2<span>></span> Mon deuxième titre titre <span><</span>/h2<span>></span><br>
                         <span class="niveau4"><span><</span>p<span>></span> Mon deuxième paragraphe <span><</span>/p<span>></span><br>
                         <span class="niveau3"><span><</span>/div<span>></span> <br> 
                         <span class="niveau2"><span><</span>/section<span>></span> <br>
-                        <span><</span>/main<span>></span> <br>
+                        <span><</span>/main<span>></span> <br> <br>
                     </p>
                     <p class="commentaire">// Ma balise main contient une section qui elle même comprends deux div <br>
-                        Ces deux div comprennent chacune une image, un titre et un paragraphe
+                        Ces deux div comprennent chacune une image, un titre et un paragraphe. <br><br>
+                        // Pour la balise img, il faut noter le nom du chemin de l'image par rapport au dossier où elle est rangée dans le projet. <br> Le "alt" sert de note au cas où l'image ne s'affiche pas. Cela facilite aussi la compréhension pour les personnes mal-voyantes. Elles pourront comprendre de quoi traite l'image. <br> <br>
+                        Exemple : <br>
+                        code : <br>
+                        <img src="images/balises/codeChien.png" alt=""> <br>
+                        rendu : <br>
+                        <img src="images/balises/altChien.png" alt=""> <br><br>
+                        // Pour rappel, les photos que vous utilisez pour le site, (si le dossier de projet est bien organisé comme je l'ai expliqué dans l'onglet <a class="lienZonning" href="organisation.html">"Organisation"</a> ), se trouvent dans le dossier images que vous avez créer à la racine du dossier de projet. <br> <br>
+                        c'est pourquoi dans la source de l'img, je commence par "images/" + le nom de la photo.
                       
                     </p> 
 

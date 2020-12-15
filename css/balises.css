@@ -54,3 +54,12 @@
   background-color:#e1dbdb54;
 }
 
+.lienZonning{
+    color: black;
+    text-decoration: underline;
+}
+
+.lienZonning:hover{
+    color : #ba1159;
+    font-size: 1.1em;
+}
