@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.head{
+   
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+
+.menu-chapitre ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    height: 12vh;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.menu-chapitre li{
+    padding: 5px;
+    list-style: none;
+}
+.menu-chapitre a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-chapitre a:hover{
+    background-color: lightgrey;
+    color: black;
+}
+.contenu{
+    width: 90%;
+    margin: 10vh auto 0 auto;
+}
+
+.container-chapitre{
+    background-color: rgb(238, 235, 235);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.titre-chapitre{
+    margin-bottom: 20px ;
+    text-align: center;
+}
+
+.boite-image{
+    display: block;
+    margin: 0 auto;
+}
+
+.imgTuto{
+    display: block;
+  width: 99%;
+    margin: 10px auto 10px auto;
+}
+
+.description-chapitre{
+    text-align: justify;
+}
+.rouge{
+    color: red;
+    font-weight: 600;
+}
+.commentaire{
+    color: green;
+   font-style: italic;
+  
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.fleche{
+    height: 2vh;
+    margin-left: 10px;
+}
+
+.next{
+    text-decoration: none;
+}
+footer{
+    height: 5vh;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+@media only screen and (min-width : 1200px){
+    .menu-chapitre ul {
+       height: 5vh;
+    }
+
+    .contenu{
+        width: 80%;
+        
+
+    }
+}

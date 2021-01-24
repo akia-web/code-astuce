@@ -8,12 +8,12 @@
     display: flex;
     justify-content: space-between;
     margin : 0 auto;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: 90%;
 }
 
 .imageLogo{
-    height: 10vh;
+    /* height: 10vh; */
   
 }
 
