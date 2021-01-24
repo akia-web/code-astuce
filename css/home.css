@@ -1,3 +1,5 @@
+
+
 .accueilIndex{
    
     width: 90%;
@@ -35,4 +37,86 @@ h1{
     width: 90%;
     margin: 0 auto;
 
+}
+
+.menu-icon{
+    width: 54px;
+    height: 54px;
+    position: relative;
+    /* background-color: black; */
+    border-radius: 50%;
+}
+
+.menu-icon span{
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    position:absolute;
+    top : 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.menu-icon span::before, .menu-icon span::after {
+    content: "";
+    display: block;
+    position : absolute;
+    top : 0;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-6px);
+    transition: transform 0.5s;
+}
+
+.menu-icon span::after{
+    transform: translateY(6px);
+}
+
+.menu-icon-cross.is-opened span{
+    background-color: transparent;
+
+}
+
+.menu-icon-cross.is-opened span::before{
+    transform: translateY(0) rotate(45deg);
+
+}
+
+.menu-icon-cross.is-opened span::after{
+    transform: translateY(0) rotate(-45deg);
+
+}
+
+.menu-icon-cross span::before, .menu-icon-cross span::after{
+    transform-origin: 50% 50%;
+}
+
+.menu-icon-cross span{
+    transition: background 0.5s, transform 0.5s;
+    z-index: 2;
+}
+
+.menu-icon-cross{
+    transition: transform 0.5s
+}
+.menu-icon-cross.is-opened{
+    transform: rotate(180deg);
+}
+
+.menu-icon-cross.is-opened svg{
+   stroke-dashoffset: 0;
+   transform: rotate(-180deg);
+}
+svg{
+    z-index: 1;
+    fill: black;
+    stroke-width: 2px;
+    stroke: rgb(158, 23, 68);
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    transition: stroke-dashoffset 0.5s, transform 0.5s;
+    
 }

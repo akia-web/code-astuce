@@ -7,6 +7,9 @@
     overflow: hidden;
     background-color: white;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .accroche-chapitre{
@@ -151,4 +154,15 @@ footer{
         width: 100%;
       
     }
+}
+
+@media only screen and (min-width : 1800px){
+    .contenu{
+        width: 60%;
+    }
+
+    .menu-chapitre ul{
+        height: 3vh;
+    }
+
 }

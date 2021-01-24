@@ -61,23 +61,17 @@ nav li a:hover{
     font-size: 1.5em;
     
 }
-
-li a:hover{
-text-decoration: underline;
-color: white;
-
+.book-mini{
+    width:50%
 }
 
-.niveau1:hover{
-   border-top: 3px double black ;
-   border-bottom:3px double black ;
+.menu-langage-burger{
+    display: none;
+    height: 30vh;
 }
 
-.titreNav{
-    font-size: 20px;
-   
+.images-menu-langage{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
 }
-
-
-
-
