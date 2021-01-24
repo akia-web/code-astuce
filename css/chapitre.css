@@ -9,6 +9,24 @@
     width: 100%;
 }
 
+.accroche-chapitre{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: left;
+   
+}
+
+.cadres{
+    list-style: none;
+}
+.lien-precedant{
+    text-decoration: none;
+    color:  rgb(158, 23, 68)
+}
+.lien-precedant:hover{
+    text-decoration: underline;
+}
+
 .menu-chapitre ul {
     display: flex;
     flex-wrap: wrap;
@@ -77,13 +95,20 @@
 button{
     display: block;
     margin: 0 auto;
-    padding: 20px
+    padding: 20px;
+    width : 50%
 }
 
 .fleche{
     height: 2vh;
     margin-left: 10px;
 }
+.fleche-precedent{
+    margin-right: 10px;
+    height: 2vh;
+}
+
+
 
 .next{
     text-decoration: none;
@@ -96,7 +121,10 @@ footer{
     padding-top: 10px;
 
 }
-
+.vert{
+    color: rgb(108, 165, 22);
+    
+}
 @media only screen and (min-width : 1200px){
     .menu-chapitre ul {
        height: 5vh;
@@ -106,5 +134,21 @@ footer{
         width: 80%;
         
 
+    }
+    .accroche-chapitre{
+        font-size: 3em;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+
+        
+    }
+    button{
+        width: 20%;
+    }
+    .button2{
+        width: 100%;
+      
     }
 }
