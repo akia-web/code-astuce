@@ -6,7 +6,17 @@
 }
 .accroche{
     text-align: center;
-    font-size: 70px;
+    font-size: 2em;
     font-weight: 600;
 
+}
+
+.book{
+    height: 25vh;
+}
+
+.book:hover{
+    transform: scale(1.2);
+    transform: rotate(5deg);
+    transition: 0.2s ease-in;
 }
