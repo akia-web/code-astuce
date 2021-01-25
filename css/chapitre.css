@@ -37,14 +37,12 @@
     width: 100%;
     justify-content: center;
     margin-top: 10px;
-    height: 14vh;
+
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
 
-.menu-chapitre-2 ul{
-    height: 10vh;
-}
+
 
 .menu-chapitre li{
     padding: 5px;
