@@ -5,10 +5,11 @@
 .head{
    
     overflow: hidden;
-    background-color: white;
+    
     width: 100%;
     display: flex;
     justify-content: space-between;
+    height: 60px;
 
 }
 
@@ -36,9 +37,13 @@
     width: 100%;
     justify-content: center;
     margin-top: 10px;
-    height: 12vh;
+    height: 14vh;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+}
+
+.menu-chapitre-2 ul{
+    height: 10vh;
 }
 
 .menu-chapitre li{

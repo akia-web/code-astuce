@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/chapitre.css">
+    <link rel="stylesheet" href="css/head.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascript/burger.js"></script>
     <title>Visual Studio Code</title>
 </head>
 <body>
@@ -14,18 +16,30 @@
         <div class="imageLogo">
            <a href="index.html"> <img class="logo" src="images/logo1.svg" alt="logo du site"></a>
         </div>      
-        <div class="menu-chapitre">
-            <ul>
-                <a href="#ouvrirProjet"><li>ouvrir le projet VsCode | </li></a>   
-                <a href="#decompositionProjet"><li>Décomposition de VsCode  | </li></a>
-                <a href="#structureHtml"><li>Structure Html</li></a>
-              
-                
-            </ul>
-            </div>
-   
+        <div class="menu-icon menu-icon-cross">
+            <span></span>
+            <svg x="0" y="0" width="54px" height="54px" viewBox="0 0 54 54">
+                <circle cx="27" cy="27" r="25"></circle>
+            </svg>
+        </div>
     </section>
 
+    <nav id="menu-langage-burger" class="menu-langage-burger">
+        <div class="images-menu-langage">
+        <a href="html-css.html"><img class="book-mini"src="images/navigation/html.svg" alt=""></a>
+        </div>
+    </nav>
+   
+    </section>
+    <div class="menu-chapitre menu-chapitre-2">
+        <ul>
+            <a href="#ouvrirProjet"><li>1. Ouvrir le projet VsCode | </li></a>   
+            <a href="#decompositionProjet"><li>2. Décomposition de VsCode  | </li></a>
+            <a href="#structureHtml"><li>3. Structure Html</li></a>
+          
+            
+        </ul>
+        </div>
     
 
     <div class="contenu">

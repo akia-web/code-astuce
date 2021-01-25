@@ -1,77 +1,28 @@
-/*barre d'en-tete */
 
-.logo{
-    height: 3vh;
-}
-
-.head{
-    display: flex;
-    justify-content: space-between;
-    margin : 0 auto;
-    /* margin-top: 50px; */
-    width: 90%;
-}
-
-.imageLogo{
-    /* height: 10vh; */
-  
-}
-
-.navigation{
-    margin-left: 10px;
-}
-
-
-.menuNav {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    flex-wrap: wrap;
-    
-}
-
-nav .niveau2 {
-    display: none;
-    width: 200px;
-}
-
-li{
-    list-style: none;
-    width: 200px;
-  
-    
-}
-
-nav li a{
-    padding: 5px;
-    text-decoration: none;
-    color : rgb(158, 23, 68);
-    display: block;  
-   
-}
-
-nav ul.niveau1 li.sousmenu:hover ul.niveau2{
-    display: block;
-    
-}
-
-nav li a:hover{
-    color:black;
-    font-size: 1.5em;
-    
-}
 .book-mini{
-    width:50%
+    width:50%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.book-mini:hover{
+   transform: rotate(-10deg);
+   opacity: 0.8;
 }
 
 .menu-langage-burger{
     display: none;
-    height: 30vh;
+   
+
 }
 
 .images-menu-langage{
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+   
+}
+
+@media only screen and (min-width : 1800px){
+    .book-mini{
+        width: 90%
+    };
 }
