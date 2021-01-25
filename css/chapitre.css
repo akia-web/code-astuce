@@ -132,10 +132,7 @@ footer{
     
 }
 @media only screen and (min-width : 1200px){
-    .menu-chapitre ul {
-       height: 5vh;
-    }
-
+  
     .contenu{
         width: 80%;
         
@@ -164,8 +161,6 @@ footer{
         width: 60%;
     }
 
-    .menu-chapitre ul{
-        height: 3vh;
-    }
+   
 
 }
