@@ -2,6 +2,10 @@
     margin:0;
     padding: 0;
 }
+
+body{
+    background-color: rgba(250, 232, 199, 0.631);
+}
 .head{
    
     overflow: hidden;
@@ -9,10 +13,21 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    
+    background-color: white;
 
 }
 
+.sous-titre2{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.sous-titre3{
+    font-size: 1.2em;
+    font-weight: bold;
+}
 .accroche-chapitre{
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -22,6 +37,21 @@
 
 .cadres{
     list-style: none;
+}
+
+.cadreVert{
+    background-color: rgba(178, 235, 178, 0.309);
+    padding: 15px;
+}
+
+.cadreOrange{
+    background-color: rgba(255, 166, 0, 0.22);
+    padding: 15px;
+}
+
+.cadreGris{
+    background-color: lightgray;
+    padding: 15px;
 }
 .lien-precedant{
     text-decoration: none;
@@ -36,8 +66,8 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-top: 10px;
-
+    /* margin-top: 10px; */
+    background-color: white;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
@@ -63,10 +93,11 @@
 }
 
 .container-chapitre{
-    background-color: rgb(238, 235, 235);
+  background-color: white;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 7px;
+    border : 1px solid black;
 }
 
 .titre-chapitre{
@@ -83,6 +114,16 @@
     display: block;
   width: 99%;
     margin: 10px auto 10px auto;
+}
+
+.imgTuto2{
+    width: 100%;
+    margin :20px 0
+}
+
+.imgTuto3{
+    width: 100;
+    margin :20px 0
 }
 
 .description-chapitre{
@@ -131,6 +172,32 @@ footer{
     color: rgb(108, 165, 22);
     
 }
+
+.niveau2{
+    margin-left: 15px;
+}
+
+.niveau3{
+    margin-left: 30px;
+}
+
+.niveau4{
+    margin-left: 45px;
+}
+
+.container-inline{
+    width: 90%;
+    margin : 0 auto 15px auto;
+    border: 2px dashed black;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+.exemple-div{
+    background-color: pink;
+}
 @media only screen and (min-width : 1200px){
   
     .contenu{
@@ -161,6 +228,14 @@ footer{
         width: 60%;
     }
 
+    .imgTuto2{
+       width: 70%; 
+    }
+
+    .imgTuto3{
+        width: 30%; 
+     }
+ 
    
 
 }
