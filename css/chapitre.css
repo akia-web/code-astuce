@@ -6,6 +6,39 @@
 body{
     background-color: rgba(250, 232, 199, 0.631);
 }
+.menu-chapitre-div2{
+    width: 90%;
+    
+}
+.menu-chapitres{
+    
+    width: 80%;
+    margin: 0 auto;
+  
+}
+
+.menu-chapitres li{
+    padding: 10px;
+    color : black    
+}
+
+.menu-chapitres a{
+    text-decoration: none;
+   
+}
+
+.menu-chapitres li:hover{
+   color: rgb(158, 23, 68);
+   font-size: 1.1em
+   
+}
+
+.menu-chapitres-div{
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+}
 .head{
    
     overflow: hidden;
@@ -197,6 +230,8 @@ footer{
 
 .exemple-div{
     background-color: pink;
+    border:1px solid black;
+    text-align: center;
 }
 @media only screen and (min-width : 1200px){
   
@@ -236,6 +271,14 @@ footer{
         width: 30%; 
      }
  
+     .menu-chapitres-div{
+         width: 50%;
+         margin: 50px auto;
+     }
    
+     .menu-chapitres-div2{
+        width: 80%;
+        margin: 50px auto;
+    }
 
 }

@@ -13,6 +13,8 @@
 
 }
 
+
+
 .logo {
    height: 3vh;
    margin-left: 20px;
@@ -120,3 +122,4 @@ svg{
     transition: stroke-dashoffset 0.5s, transform 0.5s;
     
 }
+
