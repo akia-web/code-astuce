@@ -141,9 +141,9 @@ height: 200px;
     min-height: 100%;
     -webkit-box-shadow: 5px 6px 15px 2px rgba(0,0,0,0.29); 
     box-shadow: 5px 6px 15px 2px rgba(0,0,0,0.29);
-    overflow: auto;
     scroll-behavior: smooth;
     display: none;
+  
    
 }
 
@@ -152,13 +152,14 @@ height: 200px;
 
 .container-onglets{
     width: 100%;
-    height: 8vh;
+ 
     background-color: white;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  
     
    
     
@@ -172,6 +173,8 @@ height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 5vh;
+  
 }
 
 .onglets:not(:nth-child(4)){
@@ -198,6 +201,8 @@ height: 200px;
     width: 100%;
     position: absolute;
     opacity: 0;
+    overflow:scroll;
+    /* scroll-behavior: contain; */
 
 }
 
