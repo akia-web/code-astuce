@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>astuces</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+   
+    
+    
+</head>
+<body>
+    <header>
+        <div class="cadre"></div>
+    </header>
+
+    <main>
+        <!--Tous les livres-->
+        <section class="livres">
+        <img src="html.svg" alt="" class="html" id="html">
+        <img  class="css"src="css.svg" alt="" id="css">
+        </section>
+    
+        <div class="etagere"></div>
+       
+
+        <!--carte HTML-->
+      
+
+
+   <!--carte HTML-->
+    <section class="container carte" id="menu-html">
+        <button class="close">x</button>
+        <nav class="container-onglets" id="navigation">
+            <div class="onglets active" data-anim="1">Organisation</div>
+            <div class="onglets" data-anim="2">Vs code</div>
+            <div class="onglets" data-anim="3">Zonning</div>
+            <div class="onglets" data-anim="4">Balises</div>
+            
+        </nav>
+
+        <!-----------------ORGANISATION DES DOSSIERS------------->
+        <div class="contenu activeContenu" data-anim="1">
+          
+            <h2>Comment organiser ses dossiers?</h2> <br><br>
+            <p>
+                L'organisation du dossier est très important.  En effet, lorsque l'on a qu'un seul projet, celà ne nous parrait pas important.  Pourtant, les projets vont vite s'enchainer et devenir beaucoup plus important.  Une organisation s'impose pour pouvoir mieux se retrouver.
+            </p>
+
+            <!-- Menu des sous chapitres Organisation-->
+            <nav class="menu-chapitre">
+                <a class="lien-menu-chapitre" href="#dossierProjet">1. Dossier de tous les projets | <a>   
+                <a class="lien-menu-chapitre" href="#futurProjet">2. Dossier du projet | </a>
+                <a class="lien-menu-chapitre" href="#imagesCss">3. Dossiers images et CSS  | </a>
+                <a class="lien-menu-chapitre" href="#afficheExtension">4. Extension des fichiers | </a>
+                <a class="lien-menu-chapitre" href="#ajoutHtml">5. Fichier HTML | </a>
+                <a class="lien-menu-chapitre" href="#fichierCss">6. Fichier CSS | </a>
+            </nav>
+
+            <!--Chapitre 1 Organisation-->
+            <div class="sous-contenu" id="dossierProjet">    
+                <h3>1. Création du dossier qui regroupe tous nos projets</h3> <br>
+                <p>Dans un premier temps, il faut créer un dossier qui regrouperas tous nos dossiers de projets de code <p>
+                <img class="boite-image"src="images/organisation/dossier_projets.png" alt="dossier projet"> 
+            </div>
+
+            <!--CHAPITRE 2-->
+            <div class="sous-contenu" id="futurProjet">    
+                <h3>2. Création du dossier de ton futur projet</h3> <br>
+                <p>Ouvre le dossier "projets", et à l'intérieur de celui-ci, il faut créer  un autre dossier au nom du projet que tu veux réaliser. <br> <br>
+                    <span class="commentaire">// Par exemple ici, je l'ai appelé tuto_html</span>
+                    </p>
+                    <img class="imgTuto"src="images/organisation/dossier_tuto.png" alt="dossier tuto">
+                <p class="text_descriptif rouge"> /!\ Pour le nom de dossier/fichier il ne faut pas mettre d'espace. <br>On peut le remplacer par un tiret vers le bas (underscore [touche 8]).
+                </p>   
+            </div>
+
+            <!--CHAPITRE 3-->
+            <div class="sous-contenu" id="imagesCss">    
+                <h3>3. Création des dossiers "images" et "css"</h3> <br>
+                <p >Ouvre le dossier tuto_html et dans celui-ci  crée deux dossiers. Un dossier images et un autre css <br> <br></p>
+                <img  class="imgTuto" src="images/organisation/dossier_tuto_2.png" alt="dossier html et dossier css">
+                <p class="text_descriptif rouge"> /!\ Nommez les simplement pour qu'elles ne soient pas compliqué à écrire dans le code, sans accents et caractères spéciaux. Les chiffres sont acceptés.<br> Exemple : maison.png, fleur.jpg </p> <br>
+                <p>Le dossier css regroupera toutes les feuilles de style dont nous aurons besoin.
+                </p>   
+            </div>
+
+             <!--CHAPITRE 4-->
+            <div class="sous-contenu" id="afficheExtension">    
+                <h3>4. Afficher l'extension des fichiers</h3> <br>
+                <p >Pour la prochaine étape, nous aurons besoin de voir l'extension du fichier pour la renomer.<br> <br>
+                    Pour celà il faut aller dans "Affichage" puis cocher la case "Extension de noms de fichiers"</p>
+                <img class="imgTuto" src="images/organisation/afficher_extension.png" alt="comment afficher une extension"> 
+            </div>
+
+            <!--CHAPITRE 5-->
+            <div class="sous-contenu" id="ajoutHtml">    
+                <h3>5. Ajouter le fichier Html à la racine</h3> <br>
+                <p >Maintenant il faut créer la page Html. C'est dans cette page que va se trouver la structure du site ainsi que tous les éléments de texte. <br> <br>
+                    1. Faire un clic droit sous le dossier "images". <br>
+                    2. Selectionner "nouveau" -> "document texte".</p>
+                    <img class="imgTuto" src="images/organisation/ajout_fichier_txt.png" alt="création du fichier html">
+                <p class="text_descriptif "> 3.Faites un clic droit sur ce nouveau fichier et selectionner "renomer". <br> <br>On le renomme en index.html  </p> <br>
+                <p>Le dossier css regroupera toutes les feuilles de style dont nous aurons besoin.</p>   <br>
+                <p class="commentaire"> // On le nomme index.html car c'est ainsi que l'on nomme sa page d'accueil. Beaucoup d'herbergeurs demandent d'avoir un fichier index.html pour pouvoir faire fonctionner le site. En développement local il n'est pas nécessaire de le nommer comme celà mais il est préférable de s'habituer à la convention.</p>
+                <img class="imgTuto" src="images/organisation/renommer.png" alt="nom du fichier html">
+                <p>Un message va apparaitre. Il demande si vous voulez vraiment modifier l'extension. Vous dites oui</p>
+                <img class="imgTuto" src="images/organisation/page_html.png" alt="fichier index">
+
+                <p>Voilà ! la page html est créée.</p>
+            </div>
+
+             <!--CHAPITRE 6-->
+             <div class="sous-contenu dernier-chapitre" id="fichierCss">    
+                <h3>6. ajouter un fichier CSS</h3> <br>
+                <p >On se positionne dans le dossier "css". <br> 
+                    Clic droit -> nouveau -> document texte <br>
+                    Puis on va nommer ce fichier : style.css</p>
+                    <img class="imgTuto" src="images/organisation/css.png" alt="fichier css">
+                
+                <p class="commentaire"> // Ce fichier servira pour la customisation du projet. <br>
+                    La page css sert par exemple à changer la police d'un texte, <br>
+                    changer la couleur de fond de page, d'une zone ou d'un texte, 
+                    positionner ses éléments de textes comme on le souhaite etc...</p>
+                <div class="retour">
+                    <a href="#navigation"><img class="arrow arrow2"src="images/up-arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- VS CODE-->
+        <div class="contenu" data-anim="2">
+        <h2>Comment ouvrir son projet dans Visual studi code?</h2> <br><br>
+        <p>
+            Pour commencer à coder, il faut un éditeur de texte. <br> Si vous n'en avez pas, un simple document peut servir, mais il faut alors tout connaitre par coeur, car il n'y aura pas d'aide de l'éditeur de texte. <br>
+            Ici, toutes les captures d'écrans seront faites avec l'éditeur de texte Visual Studio Code.
+        </p>
+
+            <!-- Menu sous-chapitre VS code-->
+            <nav class="menu-chapitre">
+                <a class="lien-menu-chapitre" href="#ouvrirProjet">1. Ouvrir le projet VsCode | </a>   
+                <a class="lien-menu-chapitre" href="#decompositionProjet">2. Décomposition de Vs Code  | </a>
+                <a class="lien-menu-chapitre" href="#structureHtml">3. Structure Html</a>
+            </nav>
+
+            <!--Chapitre 1 vs code-->
+            <div class="sous-contenu" id="dossierProjet">    
+                <h3>1. Ouvrir son dossier de projet sous Visual Studio Code </h3> <br>
+                <p>Il y a deux façons d'ouvrir son projet dans Visual Studio Code <br> <br>
+                    1. Via l'interface de visual studio code <br>
+                    -cliquez sur "open folder" ou cliquez sur "file"-> "open folder"<p>
+                <img class="imgTuto" src="images/base_html/ouvrirVS.png" alt="dossier projet">
+                <p>- une fenetre va apparaitre pour que l'on puisse choisir le dossier à ouvrir.</p>
+                <img class="imgTuto"src="images/base_html/ouvrirVS2.png" alt="dossier projet">
+                <p>2. Ou simplement faire un glissé / déposé du dossier dans l'éditeur de texte</p>
+
+            </div>
+
+         <!--Chapitre 2 vs code-->
+            <div class="sous-contenu" id="decompositionProjet">    
+                <h3>2. Décomposition de l'affichage Visual studio code </h3> <br>
+                <p>Une fois le dossier ouvert l'affichage se décompose en deux grand cadre <p>
+                <p class="commentaire">// ps : j'ai fermé le "welcome" qui se trouvait dans le cadre 2</p>
+                <img class="imgTuto"src="images/base_html/decomposition.png" alt="dossier projet">
+                <p class="rouge">Le cadre 1 (rouge) : </p>
+                <p>c'est ici que se trouve tous les sous dossiers et fichiers du projet, nous voyons son arborescence </p>
+                <p>- En premier nous retrouvons le dossier du projet, avec une fleche qui pointe vers le bas, pour indiquer que "je veux voir ce qu'il y a à l'intérieur de ce dossier".</p> <br>
+                <p>- En dessous de cette ligne, nous nous retrouvons sur la racine du projet qui contient trois éléments. (1 dossier "CSS", un dossier "images", le fichier "index.html") </p>
+            
+                <p>Ces trois éléments se trouvent au même niveau.</p> <br>
+                <p>- Puis à l'intérieur du dossier "css" le fichier "style.css",<br>
+                    qui lui n'est pas au même niveau que le dossier css, le dossier image et le fichier index.html. </p> <br>
+                <p class="commentaire">// On peut voir les différents niveaux grâce aux indentations.</p> <br> 
+                <p class="vert">Le cadre 2 (vert) :</p>  
+                <p>c'est ici que l'on va écrire du code.</p>
+
+            </div>
+
+         <!--Chapitre 3 vs code-->
+            <div class="sous-contenu" id="structureHtml">    
+                <h3>3. Structure Html </h3> <br>
+                <p>Dans un premier temps on va cliquer une fois sur le fichier index.html. <br> <br>
+                    Ensuite, allez dans le cadre 2 et marquez : ! (le signe point d'exclamation). <br> <br>
+                    Un cadre en dessous de la ligne 1 va apparaitre avec une clé à molette et le signe "point d'exclamation". <br>
+                    Faites la touche "ENTREE" . <br> <br>
+                    Cette entrée sur la clé à molette va afficher une structure de base d'un fichier Html.<p>
+                <img class="imgTuto"src="images/base_html/structure_html.png" alt="dossier projet"> 
+                
+                <p class="commentaire">// Si la clé à molette n'apparait pas, ou si vous faites la touche ESPACE au lieu de la touche ENTREE, cela n'affichera pas la base HTML</p>
+                <img class="imgTuto"src="images/base_html/structure_html2.png" alt="dossier projet"> 
+                <p class="commentaire">//Ps j'ai fermer l'arborescence du dossier en cliquant sur l'icone qui représente deux fichiers situé en haut à gauche de l'écran dans la barre de menu verticale</p> <br>
+                <img class="imgcache"src="images/base_html/cacher-dossier.png" alt="dossier projet">
+                <img class="imgTuto imgTuto2"src="images/base_html/decomposition2.png" alt="dossier projet"> 
+                <p>1. La balise !DOCTYPE html déclare le type de document</p> <br>
+                <p>2. La balise <span class="vert">html </span>représente l'ensemble de la page et indique la langue de la page. <br> Si le site est en français, il faut changer la valeur "en" par "fr"</p>
+                <br>
+                <p>3. La balise <span class="rouge">head </span>contient tous les éléments pour faire fonctionner correctement la page. On peut lui attribuer des métadonnées, des liens, des scripts etc... </p> <br>
+                <p class="commentaire">// Ces éléments ne seront pas visible sur le site</p><br>
+                <p>a. La balise meta charset="UTF-8" sert à encoder la page, pour que les accents ne soient pas retranscrit en symboles illisibles</p> <br>
+                <p>b. La balise meta name="viewport" sert pour que le site soit accessible sur téléphone</p> <br>
+                <p>c. La balise <span class="violet">title</span> est le titre qu'affichera l'onglet du navigateur</p> <br>
+                <img class="imgTuto imgTuto3"src="images/base_html/document.png" alt="dossier projet"> 
+
+                <p>4. La balise <span class="bleu">body </span>est la partie visible du site. Elle se décomposeras ensuite par une multitudes de balises comme header main footer etc...</p>
+                <div class="retour">
+                    <a href="#navigation"><img class="arrow arrow2"src="images/up-arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- LE ZONNING-->
+
+        <div class="contenu contenu3" data-anim="3">
+            <h2>Par où commencer pour coder?</h2> <br><br>
+            <p>
+            Avant de commencer à coder, il faut faire du zonning pour determiner la structure de son code
+            </p>
+            <!-- Menu sous-chapitre VS code-->
+            <nav class="menu-chapitre">
+                <a class="lien-menu-chapitre" href="#sans-zonning">1. Ouvrir le projet VsCode | </a>   
+                <a class="lien-menu-chapitre" href="#avec-zonning">2. Décomposition de Vs Code  | </a>
+                <a class="lien-menu-chapitre" href="#decompose">3. Structure Html</a>
+            </nav>
+
+            <div class="sous-contenu" id="sans-zonning">
+                <h3>1. Imaginer à quoi pourrai bien ressembler son futur site</h3> <br>
+                <p>Dans un premier temps on va dessiner son site, sur une feuille, ou sur un logiciel</p>
+                <img class="imgTuto"src="images/zonning2.svg" alt="dossier projet">
+            </div>
+
+            <div class="sous-contenu" id="avec-zonning">
+                <h3>2. Faire du zonning</h3> <br>
+                <p>Maintenant il faut determiner, avant de se lancer à bras perdus dans le code, tous les éléments que nous avons besoin!</p>
+                <img class="imgTuto"src="images/zoning.svg" alt="dossier projet">
+            </div>
+
+            <div class="sous-contenu" id="decompose">
+                <h3>3. Comment ca s'écrit?</h3> <br>
+                <div class="bord-vert">
+                    <p class="text_descriptif"><span><</span>header<span>></span> <br>
+                        <span class="niveau2"><span><</span>img src="images/logo.png" alt="logo"<span>></span> <br>
+                        <span class="niveau2"><span><</span>nav<span>></span> <br>
+                        <span class="niveau3"><span><</span>a href="accueil.html"<span>> </span><span><</span>Accueil<span><</span>/a><br>
+                        <span class="niveau3"><span><</span>a href="accueil.html"<span>> </span><span><</span>Articles<span><</span>/a><br>
+                        <span class="niveau3"><span><</span>a href="accueil.html"<span>> </span><span><</span>Contact<span><</span>/a><br>                
+                        <span class="niveau2"><span><</span>/nav<span>></span> <br>
+                        <span><</span>/header<span>></span> <br>
+                    </p>
+                </div>
+
+                <div class="bord-orange">
+                    <p class="text_descriptif"><span><</span>main<span>></span> <br>
+                        <span class="niveau2"><span><</span>section<span>></span> <br>
+                        <span class="niveau3"><span><</span>div<span>></span> <br>
+                        <span class="niveau4"><span><</span>img src="images/photo1.png" alt="mer"<span>></span> <br>
+                        <span class="niveau4"><span><</span>h2<span>></span> Mon titre <span><</span>/h2<span>></span><br>
+                        <span class="niveau4"><span><</span>p<span>></span> Mon paragraphe <span><</span>/p<span>></span><br>
+                        <span class="niveau3"><span><</span>/div<span>></span> <br> <br>
+                        <span class="niveau3"><span><</span>div<span>></span> <br>
+                        <span class="niveau4"><span><</span>img src="images/photo2.png" alt="montage"<span>></span> <br>
+                        <span class="niveau4"><span><</span>h2<span>></span> Mon deuxième titre titre <span><</span>/h2<span>></span><br>
+                        <span class="niveau4"><span><</span>p<span>></span> Mon deuxième paragraphe <span><</span>/p<span>></span><br>
+                        <span class="niveau3"><span><</span>/div<span>></span> <br> 
+                        <span class="niveau2"><span><</span>/section<span>></span> <br>
+                        <span><</span>/main<span>></span> <br> <br>
+                    </p>
+                </div>
+
+                <div class="bord-bleu">
+                    <p class="text_descriptif"><span><</span>footer<span>></span> <br>
+                        <span class="niveau2"><span><</span>p<span>></span> © Charline Royer 2020 <span><</span>/p<span>></span><br>
+                        <span><</span>/footer<span>></span> <br>
+                    </p>
+                </div>
+                    <div class="retour">
+                        <a href="#navigation"><img class="arrow arrow2"src="images/up-arrow.svg" alt=""></a>
+                    </div>
+                   </div> 
+                   </div>
+                   
+                
+           
+        </div>
+
+
+
+
+        <div class="contenu" data-anim="4">
+            <h2>Les balises</h2> <br><br>
+            <p>
+                Il existe deux types de balises. Les balises inline-bloc et les balises bloc. Chaque balises que je vais renseigner aura un lien vers le site <a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/"> MDN</a>.
+            </p>
+
+            <div class="sous-contenu" id="decompositionProjet"> 
+                <h3>Les balises Inlines-blocs</h3>
+                <p>Les balises de type Inline-block sont des balises occupant seulement la place du texte. Elles se mettront à la suite des unes des autres sur une même ligne tant qu'elles auront de la place.</p> <br>
+                <p>Par exemple si j'écris plusieurs liens ceux-ci seront sur la même ligne</p> <br>
+                <p><a target="_blank" href="https://www.linkedin.com/in/charline-royer-1127a7a1/">Clique ici</a> | <a target="_blank" href="https://charline-royer-nws.netlify.app/">Clic-là</a> | <a target="_blank"  href="https://normandiewebschool.fr/">Puis enfin clic ici</a> <br><br></p>
+                <p class="sous-titre3">De base</p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/a"> La balise <span><</span>a<span>></span></a> est utilisé pour des liens </p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/button"> La balise <span><</span>button<span>></span></a> est utilisé pour créer un bouton </p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img"> La balise <span><</span>img<span>></span></a> est utilisé pour des images </p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/span"> La balise <span><</span>span<span>></span></a> est utilisé pour un ou quelques mots </p>
+                <br><br>
+                <p class="sous-titre3">Pour les formulaires</p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input"> La balise <span><</span>input<span>></span></a> est utilisé pour créer une zone de remplissage de texte </p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/label"> La balise <span><</span>button<span>></span></a> est utilisé pour créer un label que l'on met généralement devant un input </p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/textarea"> La balise <span><</span>textarea<span>></span></a> est utilisé pour créer une zone de texte plus grande que le input </p>
+                <br><br>
+                <p class="sous-titre3">Pour la mise en page</p>
+                <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/br"> La balise <span><</span>br<span>></span></a> est utilisé pour sauter une ligne </p>
+            </div>
+            <div class="sous-contenu" id="decompositionProjet"> 
+                <h3>Les balises Blocs</h3>
+                <p>Les balises de type Block prennent toute la largeur de la page et se mettront les unes en dessous des autres.<br>Chaque balises à son interêt sémantiquement. Imaginons une maison, il y a une cuisine, une chambre, une salle de bain, un bureau etc... <br>
+                    Puis les endroits non définis s'appellent des pièces <br> <br>
+                On pourrait alors imaginer que les div sont des pièces sans définitions exactes.</p><br>
+                <p>par exemple si je mets trois balises div celles-ci se placerons les unes en dessous des autres</p><br>
+                <div class="exemple-div">Div 1</div>
+            <div class="exemple-div">Div 2</div>
+            <div class="exemple-div">Div 3 </div><br>
+            <p class="sous-titre3">Balises structurantes</p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/header"> La balise <span><</span>header<span>></span></a> est utilisé pour le haut d'une page, une en-tête. </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/main"> La balise <span><</span>main<span>></span></a> est utilisé pour le contenu principal d'une page, Il se trouve entre le header et le footer</p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer"> La balise <span><</span>footer<span>></span></a> est utilisé pour le bas d'une page, un pied de page. </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/form"> La balise <span><</span>form<span>></span></a> est utilisé pour déclarer un formulaire. </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav"> La balise <span><</span>nav<span>></span></a> est utilisé pour y mettre un menu de navigations avec des liens. </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/section"> La balise <span><</span>section<span>></span></a> est utilisé pour une partie de site. </p>
+            
+            <br><br>
+            <p class="sous-titre3">Balises pour les listes</p>
+            
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul"> La balise <span><</span>ul<span>></span></a> est utilisé pour déclarer une liste non ordonnée (sans numéros). </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol"> La balise <span><</span>ol<span>></span></a> est utilisé pour déclarer une liste ordonnée (avec des numéros). </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/li"> La balise <span><</span>li<span>></span></a> est utilisé pour les puces des listes. </p>
+            <br>
+            <p class="sous-titre3">Balises pour le texte</p> 
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/h1"> La balise <span><</span>h1<span>></span></a> est utilisé pour un titre de niveau 1. <span class="rouge">/!\ 1 seul H1 par pages</span>. </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/h2"> La balise <span><</span>h2-h6<span>></span></a> est utilisé pour un titre de niveau 2 à 6. Le mieux est de les utiliser dans l'ordre. </p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/p"> La balise <span><</span>p<span>></span></a> est utilisé pour déclarer un paragraphe. </p>
+        <br>
+            <p class="sous-titre3">Autre balise quand nous ne savons plus quoi d'autre utiliser</p>
+            <p>-<a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div"> La balise <span><</span>div<span>></span></a> balise à utiliser en dernier recourt. </p>
+
+            </div>
+
+          
+           
+
+        </div>
+
+        
+
+
+    </section>    
+
+
+
+
+
+</main>
+    <script type="text/javascript" src="livres.js"></script>
+ 
+</body>
+</html>

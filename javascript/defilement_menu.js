@@ -7,7 +7,7 @@ $(function() {
             location.hostname == this.hostname
             && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
         ) {
-            $("#scroll").removeClass(".head");
+          
             var anchor = $(this.hash);
             anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
             if ( anchor.length ) {
