@@ -84,7 +84,7 @@
 	// the options
 	$.BookBlock.defaults = {
 		// vertical or horizontal flip
-		orientation : 'vertical',
+		orientation : 'horizontal',
 		// ltr (left to right) or rtl (right to left)
 		direction : 'ltr',
 		// speed for the flip transition in ms
