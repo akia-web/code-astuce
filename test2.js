@@ -1,25 +1,50 @@
 let pages = document.querySelectorAll('.lien-chapitre');
 
 console.log("a[href^='#']");
-const TIME_ANIMATE = 420;
 
-$("a[href^='#']").click(function (e) {
-   //$(this).hide();
-   //this -> <a></a>
-   //this.href -> url
+
+function coucou(){
    
-   let split = splitHref(this.href);
-   console.log(split);
+     
+      $("a[href^='#']").click(function (e) {
+         //$(this).hide();
+         //this -> <a></a>
+         //this.href -> url
+         setTimeout(grossir, 1000);
+        
+        let split = splitHref(this.href);
+        console.log(split);
+      
+        let container = document.querySelector("#" + split);
+      
+        document.querySelector(".active").classList.remove("active");
+        //    container.classList.add("page-rotate");
+        container.classList.add("active");
+        
+        
+        
+      });
+   }
 
-   let container = document.querySelector("#" + split);
+  
 
-   document.querySelector(".active").classList.remove("active");
-//    container.classList.add("page-rotate");
+
+
+
+
+coucou();
+
+function grossir(){
   
-   container.classList.add("active");
-  
-  
-});
+   $(".container").addClass("gros")
+}
+
+
+
+
+
+
+
 
 
 /**

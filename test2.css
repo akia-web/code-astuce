@@ -21,6 +21,10 @@ transform: translate(-50%, -50%);
 display: none;
 
 }
+.gros{
+    animation-duration: 2_s;
+    animation-name: grossir;
+}
 
 .active{
     display: block;
@@ -28,6 +32,8 @@ display: none;
   
 
 }
+
+
 
 .lala{
     position: relative;
@@ -61,8 +67,9 @@ a:target{
    transition: transform 3s ease-in-out; */
 }
 
- @keyframes rotate {
-    
+ @keyframes grossir {
+    from {width: 90%;}
+    to{width: 100%;}
  }
 
 @media only screen and (min-width: 750px){
