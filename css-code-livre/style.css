@@ -1,0 +1,13 @@
+body {
+	background-color: rgb(226, 179, 108);
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+h2{
+    font-family: 'Balsamiq Sans', cursive;
+   
+}
+
+

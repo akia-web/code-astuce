@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+background-color: rgb(253, 241, 244);
+width: 90%;
+height: 80vh;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: none;
+
+}
+
+.active{
+    display: block;
+    transform-style: preserve-3d;
+  
+
+}
+
+.lala{
+    position: relative;
+    height:100%;
+    
+  
+}
+
+
+a:target{
+    color: green;
+   
+  
+    
+
+}
+   
+
+ 
+
+.next{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.page-rotate{
+   
+    /* background-color: red;
+   transform: rotateY(-180deg);
+   transition: transform 3s ease-in-out; */
+}
+
+ @keyframes rotate {
+    
+ }
+
+@media only screen and (min-width: 750px){
+    .lala{
+        display: flex;
+        height: 100%;
+        padding-left: 5%; 
+     
+    }
+    .gauche{
+        border-right: 1px solid black;
+        width: 50%;
+        height: 100%;
+        
+        
+    }
+
+    .droite{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        
+        }
+}
