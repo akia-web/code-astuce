@@ -5,11 +5,79 @@
 }
 
 body{
-    position: relative;
+  
     height: 100vh;
     overflow: hidden;
+    position: relative;
+ 
 }
 
+.livres{
+width: 24%;
+cursor: pointer;
+}
+.livre-ouvert{
+    position: absolute;
+    z-index: 999;
+    width: 80%;
+    top: 2%;
+
+}
+.livres-html{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 80%;
+margin:0 auto;
+
+}
+
+.etagere-html{
+    background-color: brown;
+    margin: 0 auto;
+    width: 80%;
+  
+    padding: 15px;
+   
+}
+
+.etagere-html p {
+    background-color: white;
+    width: 30%;
+    padding: 5px;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+section{
+    position: absolute;
+    width: 95%;
+    background-color: brown;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    border-radius: 7px;
+    display: none;
+
+
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.close:hover{
+    color: white;
+    cursor: pointer;
+}
 .container{
 background-color: rgb(253, 241, 244);
 width: 90%;
@@ -21,9 +89,9 @@ transform: translate(-50%, -50%);
 display: none;
 
 }
-.gros{
-    animation-duration: 2_s;
-    animation-name: grossir;
+.tourne-vertical{
+    animation-duration: 0.8s;
+    animation-name: tourne;
 }
 
 .active{
@@ -67,9 +135,9 @@ a:target{
    transition: transform 3s ease-in-out; */
 }
 
- @keyframes grossir {
-    from {width: 90%;}
-    to{width: 100%;}
+ @keyframes tourne {
+    from {opacity: 0;}
+    to{opacity: 1;}
  }
 
 @media only screen and (min-width: 750px){

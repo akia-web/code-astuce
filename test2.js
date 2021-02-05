@@ -3,48 +3,59 @@ let pages = document.querySelectorAll('.lien-chapitre');
 console.log("a[href^='#']");
 
 
-function coucou(){
-   
-     
-      $("a[href^='#']").click(function (e) {
-         //$(this).hide();
-         //this -> <a></a>
-         //this.href -> url
-         setTimeout(grossir, 1000);
-        
-        let split = splitHref(this.href);
-        console.log(split);
+$("#balises").on({
+   "mouseover":function(){
+      this.src = 'images/livre-ouvert-balises.svg';
+      $(this).addClass("livre-ouvert");
+   },
+   "mouseout": function(){
+      $(this).removeClass("livre-ouvert");
+      this.src="images/livre-balises.svg";
       
-        let container = document.querySelector("#" + split);
-      
-        document.querySelector(".active").classList.remove("active");
-        //    container.classList.add("page-rotate");
-        container.classList.add("active");
-        
-        
-        
-      });
    }
+})
 
+
+$("#organisation").click(function (e){
+   $(".organisation-html").show();
+});
+
+$(".close").click(function (e){
+   $("section").hide();
+});
+
+$("a[href^='#']").click(function (e) {
+   //$(this).hide();
+   //this -> <a></a>
+   //this.href -> url
+
+   let idPage = splitHref(this.href);
+
+   // grossir(idPage); // -> Déclanchement de l'animation.
+   
+   $(".droite").hide();
+   $(".gauche").addClass("tourne-vertical");
+   $(".gauche").show();
+
+      $(".droite").addClass("tourne-vertical");
+      $(".droite").show();
+    
+
+   // setTimeout(() => {
+      let container = document.querySelector("#" + idPage);
+
+      document.querySelector(".active").classList.remove("active");
+      //    container.classList.add("page-rotate");
+      container.classList.add("active");
+
+   // });
+});
+
+function grossir(idPage){
   
+   $("#" + idPage).addClass("tourne-vertical")
 
-
-
-
-
-coucou();
-
-function grossir(){
-  
-   $(".container").addClass("gros")
 }
-
-
-
-
-
-
-
 
 
 /**
