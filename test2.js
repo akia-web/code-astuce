@@ -7,8 +7,10 @@ $("#balises").on({
    "mouseover":function(){
       this.src = 'images/livre-ouvert-balises.svg';
       $(this).addClass("livre-ouvert");
+      $(this).removeClass("livres");
    },
    "mouseout": function(){
+      $(this).addClass("livres");
       $(this).removeClass("livre-ouvert");
       this.src="images/livre-balises.svg";
       
@@ -18,10 +20,12 @@ $("#balises").on({
 
 $("#organisation").click(function (e){
    $(".organisation-html").show();
+   $(".livre-etageres").hide();
 });
 
 $(".close").click(function (e){
    $("section").hide();
+   $(".livre-etageres").show();
 });
 
 $("a[href^='#']").click(function (e) {

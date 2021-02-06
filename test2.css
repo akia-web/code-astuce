@@ -13,17 +13,22 @@ body{
 }
 
 .livres{
+position: relative;
 width: 24%;
 cursor: pointer;
 }
 .livre-ouvert{
-    position: absolute;
+   position: absolute;
     z-index: 999;
-    width: 80%;
-    top: 2%;
+    width: 50%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
 }
 .livres-html{
+    
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
@@ -161,4 +166,23 @@ a:target{
         height: 100%;
         
         }
+
+    .livre-ouvert{
+       
+        /* top: 20%;
+        left: 75%; */
+        width: 24%;
+        height: 20vh;
+        position:static;
+        transform: translate(0,0);
+       
+    
+    }
+ 
+    .livres{
+       height: 20vh;
+       position: static;
+       
+    }
+    
 }
