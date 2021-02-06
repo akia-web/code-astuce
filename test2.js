@@ -33,30 +33,30 @@ $("#organisation" ).on({
    }
 })
 
-$("#balises" ).on({
+$("#visual" ).on({
    "mouseover":function(){
-      this.src = 'images/livre-ouvert-balises.svg';
+      this.src = 'images/livre-ouvert-visual.svg';
       $(this).addClass("livre-ouvert");
       $(this).removeClass("livres");
    },
    "mouseout": function(){
       $(this).addClass("livres");
       $(this).removeClass("livre-ouvert");
-      this.src="images/livre-balises.svg";
+      this.src="images/livre-visual-studio.svg";
       
    }
 })
 
-$("#balises" ).on({
+$("#zoning" ).on({
    "mouseover":function(){
-      this.src = 'images/livre-ouvert-balises.svg';
+      this.src = 'images/livre-ouvert-zoning.svg';
       $(this).addClass("livre-ouvert");
       $(this).removeClass("livres");
    },
    "mouseout": function(){
       $(this).addClass("livres");
       $(this).removeClass("livre-ouvert");
-      this.src="images/livre-balises.svg";
+      this.src="images/livre-zoning.svg";
       
    }
 })
