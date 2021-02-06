@@ -2,8 +2,38 @@ let pages = document.querySelectorAll('.lien-chapitre');
 
 console.log("a[href^='#']");
 
+// animation des livres
+$("#balises" ).on({
+   "mouseover":function(){
+      this.src = 'images/livre-ouvert-balises.svg';
+      $(this).addClass("livre-ouvert");
+      
+      $(this).removeClass("livres");
+   },
+   "mouseout": function(){
+      
+      $(this).addClass("livres");
+      $(this).removeClass("livre-ouvert");
+      this.src="images/livre-balises.svg";
+      
+   }
+})
 
-$("#balises").on({
+$("#organisation" ).on({
+   "mouseover":function(){
+      this.src = 'images/livre-ouvert-organisation.svg';
+      $(this).addClass("livre-ouvert");
+      $(this).removeClass("livres");
+   },
+   "mouseout": function(){
+      $(this).addClass("livres");
+      $(this).removeClass("livre-ouvert");
+      this.src="images/livre-organisation-html.svg";
+      
+   }
+})
+
+$("#balises" ).on({
    "mouseover":function(){
       this.src = 'images/livre-ouvert-balises.svg';
       $(this).addClass("livre-ouvert");
@@ -16,6 +46,23 @@ $("#balises").on({
       
    }
 })
+
+$("#balises" ).on({
+   "mouseover":function(){
+      this.src = 'images/livre-ouvert-balises.svg';
+      $(this).addClass("livre-ouvert");
+      $(this).removeClass("livres");
+   },
+   "mouseout": function(){
+      $(this).addClass("livres");
+      $(this).removeClass("livre-ouvert");
+      this.src="images/livre-balises.svg";
+      
+   }
+})
+
+
+
 
 
 $("#organisation").click(function (e){

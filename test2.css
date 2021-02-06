@@ -13,18 +13,15 @@ body{
 }
 
 .livres{
-position: relative;
+
 width: 24%;
 cursor: pointer;
+
 }
 .livre-ouvert{
-   position: absolute;
+   width: 26%;
     z-index: 999;
-    width: 50%;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+ 
 
 }
 .livres-html{
