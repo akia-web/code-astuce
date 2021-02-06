@@ -1,3 +1,9 @@
+:root{
+    --organisation-book-color: #B05A2F;
+    --background-page : #fff;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +18,36 @@ body{
  
 }
 
+h2,h3{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+h3{
+    padding-bottom: 1em;
+    padding-left: 2%;
+}
+
+a, p{
+ padding-left : 2%;
+ padding-bottom: 4%;
+ font-family: 'Quicksand', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color : rgb(158, 23, 68);
+    font-size: 1.1em;
+}
 .livres{
 
 width: 24%;
@@ -21,8 +57,6 @@ cursor: pointer;
 .livre-ouvert{
    width: 26%;
     z-index: 999;
- 
-
 }
 .livres-html{
     
@@ -38,7 +72,6 @@ margin:0 auto;
     background-color: brown;
     margin: 0 auto;
     width: 80%;
-  
     padding: 15px;
    
 }
@@ -57,7 +90,7 @@ margin:0 auto;
 section{
     position: absolute;
     width: 95%;
-    background-color: brown;
+    background-color: var(--organisation-book-color);
     height: 90vh;
     top: 50%;
     left: 50%;
@@ -96,38 +129,28 @@ display: none;
     animation-name: tourne;
 }
 
-.active{
-    display: block;
-    transform-style: preserve-3d;
-  
-
-}
+.active{display: block;}
 
 
 
 .lala{
     position: relative;
     height:100%;
-    
-  
-}
-
-
-a:target{
-    color: green;
-   
-  
-    
-
 }
    
 
- 
+.preview{
+     position: absolute;
+     left: 1.5%;
+     bottom: 2%;
+     width: 5%;
+}
 
 .next{
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 1.5%;
+    bottom: 2%;
+    width: 5%;
 }
 
 .page-rotate{
@@ -177,5 +200,7 @@ a:target{
 
        
     }
-    
+    .next, .preview{
+        width: 2%;
+    }
 }

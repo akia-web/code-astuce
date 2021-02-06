@@ -64,17 +64,21 @@ $("#zoning" ).on({
 
 
 
-
+// Ouverture des livres
 $("#organisation").click(function (e){
    $(".organisation-html").show();
    $(".livre-etageres").hide();
 });
 
+
+// Fermeture des livres
 $(".close").click(function (e){
    $("section").hide();
    $(".livre-etageres").show();
 });
 
+
+// liens
 $("a[href^='#']").click(function (e) {
    //$(this).hide();
    //this -> <a></a>

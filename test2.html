@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Document</title>
 </head>
@@ -31,43 +34,61 @@
     <div class="container active" id="page0">
         <div class="lala">
             <div class="gauche">
-                <h1>sommaire</h1> <br><br>
-
-                <a href="#page1" class="lien-chapitre">page 1 </a> <br>
-                <a href="#page2" class="lien-chapitre">page 2  </a> <br>
-                <a href="#page3" class="lien-chapitre">page 3  </a> <br>
-                <a href="#page4" class="lien-chapitre">page 4  </a> <br>
+                <h2>L'organisation des dossiers</h2>
+                <h3>Sommaire</h3> 
+                <a href="#page1" class="lien-chapitre"> ~> Comment organiser ses dossiers? </a> <br>
+                <a href="#page2" class="lien-chapitre"> ~> Lancer son projet dans Visual Studio Code  </a> <br>
+                <a href="#page3" class="lien-chapitre"> ~> Le zoning  </a> <br>
+                <a href="#page4" class="lien-chapitre"> ~> Les balises  </a> <br>
             </div>
 
-            
             <div class="droite">
-                <a href="#page1" class="next"><button >next</button></a>
+                <iframe width="90%" height="60%" src="https://www.youtube.com/embed/AKmoccuRiN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </div>
-        </div>
+        
+
+        
+            
+            <a href="#page1" ><img src="images/right-arrow.svg" class="next"></a>
+      
+
+       </div>
     </div>
+
+       
 
     <!-- Page 1-->
     <div class="container" id="page1">
         <div class="lala">
             <div class="gauche">
-                <iframe width="90%" height="60%" src="https://www.youtube.com/embed/AKmoccuRiN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
              
             </div>
+
             <div class="droite">
                 <p>bonjour</p>
             </div>
-        </div>
+        
 
-        <div class="button">
-            <a href="#page2" ><button class="next">next</button></a>
-        </div>
+        
+            <a href="#page0" ><img src="images/arrow.svg" class="preview"></a>
+            <a href="#page2" ><img src="images/right-arrow.svg" class="next"></a>
+      
 
-       
+       </div>
     </div>
+
+
+
+
+
+
+
 
     <div class="container" id="page2">
         <h1>page 2</h1>
-        <a href="#page3"><button class="next">next</button></a>
+        <a href="#page1" ><img src="images/arrow.svg" class="preview"></a>
+            <a href="#page3" ><img src="images/right-arrow.svg" class="next"></a>
     </div>
 </section>
    
