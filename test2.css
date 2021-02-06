@@ -165,20 +165,16 @@ a:target{
         }
 
     .livre-ouvert{
-       
-        /* top: 20%;
-        left: 75%; */
         width: 24%;
         height: 20vh;
-        position:static;
-        transform: translate(0,0);
+
        
     
     }
  
     .livres{
        height: 20vh;
-       position: static;
+
        
     }
     
