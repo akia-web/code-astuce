@@ -1,6 +1,7 @@
 :root{
     --organisation-book-color: #B05A2F;
     --background-page : #fff;
+    --couleur-commentaire : rgb(158, 23, 68);
 }
 
 
@@ -18,6 +19,15 @@ body{
  
 }
 
+img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+.imgTuto{
+    width: 90%;
+    margin-bottom: 1em;
+}
 h2,h3{
     font-family: 'Balsamiq Sans', cursive;
 }
@@ -29,8 +39,11 @@ h2{
 }
 
 h3{
-    padding-bottom: 1em;
-    padding-left: 2%;
+   padding : 1em;
+}
+
+.commentaire{
+    color : var(--couleur-commentaire)
 }
 
 a, p{
@@ -136,23 +149,45 @@ display: none;
 .lala{
     position: relative;
     height:100%;
+    overflow: auto;
 }
    
 
 .preview{
      position: absolute;
      left: 1.5%;
-     bottom: 2%;
-     width: 5%;
+     bottom: -4%;
+     width: 3%;
 }
 
 .next{
     position: absolute;
     right: 1.5%;
-    bottom: 2%;
-    width: 5%;
+    bottom: -4%;
+    width: 3%;
 }
 
+/*scroll  bar*/
+::-webkit-scrollbar{
+    width: 0px;
+    
+}
+.lala::-webkit-scrollbar{
+    width: 4px;
+    
+    
+}
+.lala::-webkit-scrollbar-track{
+    border: 2px solid white;
+    
+    
+    
+}
+
+.lala::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(214,38,38,1) 0%, rgba(221,9,98,1) 35%, rgba(246,210,229,1) 100%);
+    border-radius: 7%;
+}
 .page-rotate{
    
     /* background-color: red;
@@ -194,13 +229,16 @@ display: none;
        
     
     }
+  
+    .next, .preview{
+        width: 2%;
+        bottom: -5%;
+    }
  
     .livres{
        height: 20vh;
 
        
-    }
-    .next, .preview{
-        width: 2%;
-    }
+  
+}
 }
