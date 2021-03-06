@@ -5,6 +5,7 @@ $(function() {
     $(".etagere").show();
     $(".cadre").show();
     $(".slogan").show();
+    $(".livres").show();
     })
 
     // affiche la liste de cours html
@@ -22,6 +23,7 @@ $(function() {
         if(window.innerWidth<1200) {
            $(".cadre").hide();
            $(".slogan").hide();
+           $(".livres").hide();
         }
     })
 
