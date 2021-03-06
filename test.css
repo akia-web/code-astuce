@@ -40,9 +40,7 @@ p{
 a{
     color:var(--couleurSecondaire)
 }
-header{
-    display: flex;
-}
+
 
 /* couleurs*/
 .rouge{
@@ -337,6 +335,9 @@ header{
 
 .livres{
     width: 30%;
+}
+header{
+    display: flex;
 }
 .container{
     width: 70%;
