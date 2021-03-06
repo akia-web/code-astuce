@@ -2,23 +2,64 @@ $(function() {
     // ferme les cartes
     $('.close').click(function(){ 
     $(".carte").hide()
+    $(".etagere").show();
+    $(".cadre").show();
     })
 
     // affiche la liste de cours html
     $('#html').click(function(){ 
         $("#menu-html").show();
+        $(".etagere").hide();
+        if(window.innerWidth<1200) {
+           $(".cadre").hide();
+        }
     })
 
-    // affiche la definition html
-    $('#definition'|| "#arrow1").click(function(){ 
-        
-        $("#menu-html").hide();
-        $("#carte-definition").show();
-    })
   
 
 
 });
+
+
+
+// animation des livres
+$("#html" ).on({
+    "mouseover":function(){
+       this.src = 'images/livre-html-ouvert.svg';
+     
+    },
+    "mouseout": function(){
+       
+       this.src="images/livre-html.svg";
+       
+    }
+ })
+
+ $("#css" ).on({
+    "mouseover":function(){
+       this.src = 'images/livre-css-ouvert.svg';
+     
+    },
+    "mouseout": function(){
+       
+       this.src="images/livre-css.svg";
+       
+    }
+ })
+
+
+ $("#js" ).on({
+    "mouseover":function(){
+       this.src = 'images/livre-js-ouvert.svg';
+     
+    },
+    "mouseout": function(){
+       
+       this.src="images/livre-js.svg";
+       
+    }
+ })
+
 
 
 const onglets = document.querySelectorAll('.onglets');

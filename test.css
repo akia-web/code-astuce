@@ -40,12 +40,14 @@ p{
 a{
     color:var(--couleurSecondaire)
 }
-
+header{
+    display: flex;
+}
 
 /* couleurs*/
 .rouge{
     color : var(--couleurRouge);
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .vert{
@@ -53,12 +55,7 @@ a{
     font-weight: bold;
 }
 /* home*/
-.etagere{
-    background-color: maroon;
-    width: 70%;
-    height: 20px;
-    margin: 0 auto;
-}
+
 
 
 .cadre{
@@ -69,21 +66,30 @@ a{
     margin: 0 0 2em 1em
 
 }
-
-
-.html, .css{
-width: 20%;
-height: 200px;
+.livres{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
 }
+
+.livre{
+    height: 150px;
+    
+    }
+.etagere{
+    background-color: maroon;
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+}
+
 
 .html:hover, .css:hover{
  transform: scale(1.1);
 }
 
-.livres{
-    display: flex;
-    justify-content: center;
-}
+
 
 
 /* onglets */
@@ -103,7 +109,7 @@ height: 200px;
 }
 
 .close:hover{
-   color: white;
+   color: var(--couleurSecondaire);
 }
 /*scroll  bar*/
 ::-webkit-scrollbar{
@@ -131,7 +137,7 @@ height: 200px;
 /* chapitres */
 .container{
     position: absolute;
-    top: 0%;
+    top: 2%;
     left : 50%;
     width: 98%;
     background-color: white;
@@ -195,7 +201,7 @@ height: 200px;
 }
 
 .contenu{
-    height: 100%;
+    height: 98%;
     width: 100%;
     position: absolute;
     opacity: 0;
@@ -229,23 +235,14 @@ height: 200px;
     margin: 1em auto 1em auto;
 }
 
-.imgTuto{
+.imgTuto, .imgTuto2{
     display: block;
     width: 99%;
     margin: 1em auto 1em auto;
 }
 
-.arrow{
-    height: 4vh;
-    display: block;
-    position: absolute;
-    right: 0%;
-    bottom: -40px;
-    }
 
-.retour{
-    position: relative;
-}
+
 .niveau2{
     margin-left: 2%;
 }
@@ -258,24 +255,23 @@ height: 200px;
     margin-left: 6%;
 }
 
+.comment-ca-secrit{
+    margin-top: 2em;
+}
+.bord{
+   margin: 0.4em 10px
+}
+
 .bord-vert{
-    border: 1px solid var(--couleurVert);
-    margin-left: 10px;
-    
+    border: 1px solid var(--couleurVert);    
 }
 
 .bord-orange{
-    border: 1px solid var(--couleurOrange);
-    margin-left: 10px;
-    
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+    border: 1px solid var(--couleurOrange);  
 }
 
 .bord-bleu{
-    border: 1px solid var(--couleurBleu);
-    margin-left: 10px;
-  
+    border: 1px solid var(--couleurBleu);  
 }
 .exemple-div{
     background-color: pink;
@@ -326,19 +322,23 @@ height: 200px;
 @media only screen and (min-width : 1200px){
 .container{
     width: 70%;
-    top : 0;
+    top : 2%;
+  
     
 }
-
-.bord-bleu, .bord-orange, .bord-vert{
-    width: 30%;
-}
-
 .imgTuto3{
     width: 30%;
     margin-left: 0;
     margin-right: 0;
 }
 
+.container-faire-du-zonning{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgTuto2{
+    width: 70%;
+}
 
 }
