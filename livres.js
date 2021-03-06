@@ -15,6 +15,14 @@ $(function() {
         }
     })
 
+    $('#css').click(function(){ 
+        $("#menu-css").show();
+        $(".etagere").hide();
+        if(window.innerWidth<1200) {
+           $(".cadre").hide();
+        }
+    })
+
   
 
 
