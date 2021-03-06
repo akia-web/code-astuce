@@ -69,7 +69,7 @@ $("#html" ).on({
  })
 
 
-
+// affiche le contenu du livre HTML
 const onglets = document.querySelectorAll('.onglets');
 const contenu = document.querySelectorAll('.contenu');
 
