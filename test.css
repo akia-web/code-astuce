@@ -74,6 +74,10 @@ a{
     margin: 0 0 2em 1em
 
 }
+
+.slogan{
+    margin-bottom: 1em;
+}
 .livres{
     display: flex;
     justify-content: space-around;
