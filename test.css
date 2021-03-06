@@ -357,6 +357,15 @@ a{
   
     
 }
+
+p{
+    padding-left: 8.5em;
+    padding-right: 8.5em;
+}
+
+.imgTuto{
+    width: 80%;
+}
 .imgTuto3{
     width: 30%;
     margin-left: 0;
