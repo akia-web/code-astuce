@@ -12,6 +12,10 @@
     padding:0;
 }
 
+header{
+    display: flex;
+}
+
 /* bases */
 body{
     position: relative;
@@ -75,9 +79,12 @@ a{
 
 }
 
-.slogan{
-    margin-bottom: 1em;
+.titre-slogan{
+    font-size: 1.7em;
+    margin-top : 3em
+  
 }
+
 .livres{
     display: flex;
     justify-content: space-around;
@@ -340,8 +347,9 @@ a{
 .livres{
     width: 30%;
 }
-header{
-    display: flex;
+.titre-slogan{
+    font-size: 4em;
+    margin-top: 1em;
 }
 .container{
     width: 70%;
