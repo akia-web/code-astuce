@@ -225,7 +225,7 @@ a{
     position: absolute;
     opacity: 0;
     overflow:auto;
-     scroll-behavior: contain; 
+    scroll-behavior: smooth; 
 
 }
 
