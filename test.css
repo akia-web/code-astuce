@@ -275,7 +275,8 @@ a{
 }
 
 .comment-ca-secrit{
-    margin-top: 2em;
+    margin: 2em auto ;
+    width: 70%;
 }
 .bord{
    margin: 0.4em 10px
@@ -380,7 +381,7 @@ p{
 }
 .imgTuto3{
     width: 30%;
-    margin-left: 0;
+    margin-left: 8.5em;
     margin-right: 0;
 }
 
@@ -389,12 +390,16 @@ p{
     justify-content: space-around;
 }
 
+.comment-ca-secrit{
+    width: 35%;
+}
+
 .imgTuto2{
     width: 70%;
 }
 
 .imgTuto4{
-    width: 70%;
+    width: 60%;
 }
 
 
