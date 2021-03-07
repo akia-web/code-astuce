@@ -370,6 +370,11 @@ p{
     padding-right: 8.5em;
 }
 
+.chat-text {
+    padding-left: 1em;
+    padding-right: 0;
+}
+
 .imgTuto{
     width: 80%;
 }
@@ -387,6 +392,11 @@ p{
 .imgTuto2{
     width: 70%;
 }
+
+.imgTuto4{
+    width: 70%;
+}
+
 
 iframe{
     width: 80%;
