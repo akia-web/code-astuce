@@ -32,12 +32,14 @@ $(function() {
 
 });
 
-
+let audio = new Audio('page.wav');
 
 // animation des livres
 $("#html" ).on({
+    
     "mouseover":function(){
        this.src = 'images/livre-html-ouvert.svg';
+       audio.play();
      
     },
     "mouseout": function(){
@@ -50,11 +52,13 @@ $("#html" ).on({
  $("#css" ).on({
     "mouseover":function(){
        this.src = 'images/livre-css-ouvert.svg';
+       audio.play();
      
     },
     "mouseout": function(){
        
        this.src="images/livre-css.svg";
+      
        
     }
  })
@@ -63,6 +67,7 @@ $("#html" ).on({
  $("#js" ).on({
     "mouseover":function(){
        this.src = 'images/livre-js-ouvert.svg';
+       audio.play();
      
     },
     "mouseout": function(){
