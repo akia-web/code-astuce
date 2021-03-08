@@ -32,6 +32,7 @@ h1, h3, h2{
 h2{
     font-family: 'Satisfy', cursive; 
     font-size: 2em;
+    margin-top: 2em;
 }
 h3{
     font-family: 'Courgette', cursive;
@@ -204,9 +205,26 @@ a{
     border-right: 1px solid black;
 }
 
+.container-menu-chapitre{
+    background-color: lightgray;
+    position : fixed;
+    width: 100%;
+    z-index: 999;
+   
+}
+.imgmenu{
+   height: 7vh;
+    display: block;
+    margin-left: 94%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
 
 .menu-chapitre{
-    background-color: lightgray;
+    
+    height: 84.5vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -232,9 +250,13 @@ a{
 .sous-contenu{
     border: 1px solid black;
     border-radius: 7px;
-    margin: 1em 0 1em 0;
+    margin: 4em 0 1em 0;
     background-color: rgb(250, 244, 232);
     padding-bottom: 3em;
+}
+
+.sous-contenu h3{
+    padding-top : 3em
 }
 
 .dernier-chapitre{
@@ -317,7 +339,7 @@ height: 300px;
 
 .activeContenu{
     animation : fade 0.5s forwards;
-    z-index: 999;
+    z-index: 2;
 }
 
 @keyframes fade{
@@ -409,3 +431,4 @@ iframe{
 }
 
 }
+

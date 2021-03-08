@@ -116,6 +116,28 @@ $(function() {
     })
 
 
+    $('.menu-chapitre').hide();
+
+    $(".imgmenu").click(function () {
+        if($(this).attr('src') == "images/menu.svg") {
+          this.src = 'images/close.svg';
+          $(".menu-chapitre").show();
+        }else{
+            this.src = 'images/menu.svg'; 
+            $(".menu-chapitre").hide();
+        }
+          
+        },
+        
+     ); 
+
+        $(".lien-menu-chapitre").click(function(){
+            $('.menu-chapitre').hide();
+            $(".imgmenu").attr('src', 'images/menu.svg');
+            
+        })
+    
+       
 });
 
 
