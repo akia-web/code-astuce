@@ -116,6 +116,8 @@ $(function() {
     })
 
 
+    //Affichage du sous-menu des livres
+
     $('.menu-chapitre').hide();
 
     $(".imgmenu").click(function () {

@@ -234,19 +234,22 @@
         </div>
 
 
-        <!-- LE ZONNING-->
+        <!-- -----------------------------------------------------------------LE ZONNING--------------------------------------------------------------------------------------------------->
 
         <div class="contenu contenu3" data-anim="3">
+            <!-- Menu sous-chapitre VS code-->
+            <div class="container-menu-chapitre">
+                <img class="imgmenu"src="images/menu.svg" alt="">
+            <nav class="menu-chapitre">
+                <a class="lien-menu-chapitre" href="#sans-zonning">1. Ouvrir le projet VsCode | </a>   
+                <a class="lien-menu-chapitre" href="#avec-zonning">2. Décomposition de Vs Code  | </a>
+            </nav>
+            </div>
             <h2>Par où commencer pour coder?</h2> <br><br>
             <p>
             Avant de commencer à coder, il faut faire du zonning pour determiner la structure de son code
             </p>
-            <!-- Menu sous-chapitre VS code-->
-            <nav class="menu-chapitre">
-                <a class="lien-menu-chapitre" href="#sans-zonning">1. Ouvrir le projet VsCode | </a>   
-                <a class="lien-menu-chapitre" href="#avec-zonning">2. Décomposition de Vs Code  | </a>
-                <a class="lien-menu-chapitre" href="#decompose">3. Structure Html</a>
-            </nav>
+            
 
             <div class="sous-contenu" id="sans-zonning">
                 <h3>1. Imaginer à quoi pourrai bien ressembler son futur site</h3> <br>
@@ -309,15 +312,23 @@
 
 
 
-
+ <!-- -----------------------------------------------------------------LES BALISES--------------------------------------------------------------------------------------------------->
         <div class="contenu" data-anim="4">
+                <!-- Menu sous-chapitre balises-->
+                <div class="container-menu-chapitre">
+                    <img class="imgmenu"src="images/menu.svg" alt="">
+                <nav class="menu-chapitre">
+                    <a class="lien-menu-chapitre" href="#inline">1. Les balises type Inline | </a>   
+                    <a class="lien-menu-chapitre" href="#bloc">2. Les balises type Bloc  | </a>
+                </nav>
+                </div>
             <h2>Les balises</h2> <br><br>
             <p>
                 Il existe deux types de balises. Les balises inline-bloc et les balises bloc. Chaque balises que je vais renseigner aura un lien vers le site <a class="lien-precedant" target="_blank"href="https://developer.mozilla.org/fr/"> MDN</a>.
             </p>
 
-            <div class="sous-contenu" id="decompositionProjet"> 
-                <h3>Les balises Inlines-blocs</h3>
+            <div class="sous-contenu" id="inline"> 
+                <h3>Les balises Inlines</h3>
                 <p>Les balises de type Inline-block sont des balises occupant seulement la place du texte. Elles se mettront à la suite des unes des autres sur une même ligne tant qu'elles auront de la place.</p> <br>
                 <p>Par exemple si j'écris plusieurs liens ceux-ci seront sur la même ligne</p> <br>
                 <p><a target="_blank" href="https://www.linkedin.com/in/charline-royer-1127a7a1/">Clique ici</a> | <a target="_blank" href="https://charline-royer-nws.netlify.app/">Clic-là</a> | <a target="_blank"  href="https://normandiewebschool.fr/">Puis enfin clic ici</a> <br><br></p>
@@ -335,7 +346,7 @@
                 <p class="sous-titre3">Pour la mise en page</p>
                 <p>-<a class="lien-precedant" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/br"> La balise <span><</span>br<span>></span></a> est utilisé pour sauter une ligne </p>
             </div>
-            <div class="sous-contenu" id="decompositionProjet"> 
+            <div class="sous-contenu" id="bloc"> 
                 <h3>Les balises Blocs</h3>
                 <p>Les balises de type Block prennent toute la largeur de la page et se mettront les unes en dessous des autres.<br>Chaque balises à son interêt sémantiquement. Imaginons une maison, il y a une cuisine, une chambre, une salle de bain, un bureau etc... <br>
                     Puis les endroits non définis s'appellent des pièces <br> <br>
@@ -381,7 +392,7 @@
 
     </section>    
 
-
+    <!--------------------------------------------------------------------------------------------------------LIVRE CSS----------------------------------------------------------------------------------------->
     <section class="container carte" id="menu-css">
         <button class="close">x</button>
         <nav class="container-onglets" id="navigation">
@@ -391,7 +402,7 @@
             <div class="onglets" data-anim="4">Propriétées</div>           
         </nav>
 
-        <!-----------------Les classes------------->
+        <!----------------------------------------------------------------------------------------------RELIER HTML A CSS------------------------------------------------------------------------------------>
         <div class="contenu activeContenu" data-anim="1">
             <h2>Comment écrire du Css?</h2> <br><br>
             <p>Une fois que notre code html est écris, il y a une dernière étape avant de passer au style de votre site. Il faut que votre page html soit en relation avec votre page de css</p> <br>
@@ -411,8 +422,16 @@
         </div> <!--Fin du chapitre classes-->
 
 
-        <!-----------------Les id------------->
+        <!--------------------------------------------------------------------------------------------LES CLASSES ET LES ID---------------------------------------------------------------------------------------->
         <div class="contenu" data-anim="2">
+
+            <div class="container-menu-chapitre">
+                <img class="imgmenu"src="images/menu.svg" alt="">
+            <nav class="menu-chapitre">
+                <a class="lien-menu-chapitre" href="#class">1. Les class | </a>   
+                <a class="lien-menu-chapitre" href="#id">2. Les ID  | </a>
+            </nav>
+            </div>
         
             <h2>A quoi servent les classes et les id?</h2> <br><br>
             <p>
@@ -421,7 +440,7 @@
                 Les class et les id doivent avoir un nom explicite.
             </p>
 
-            <div class="sous-contenu">
+            <div class="sous-contenu" id="class">
                <h3>1. Les class</h3>
                <p> La class peut se mettre sur une seule balise  comme plusieurs. <br>
                 Une balise peut avoir une ou plusieurs class </p> <br>
@@ -464,6 +483,9 @@
 
                 
               
+            </div>
+            <div class="sous-contenu" id="id">
+                <h3>1. Les Id</h3>
             </div>
         </div> <!--Fin du chapitre id-->
 
